@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html dir="ltr" lang="en-US"class="no-js iem7"><![endif]-->
+<!--[if lt IE 7 ]><html dir="ltr" lang="en-US" class="ie ie6 lte9 lte8 lte7"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" lang="en-US" class="ie ie7 lte9 lte8 lte7"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en-US" class="ie ie8 lte9 lte8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en-US" class="ie ie9 lte9"><![endif]-->
+<html lang="en">
+
+{% include "head.html" %}
+
+<body class="parent-hotel for-homepage explorer_chain" data-hotelid="6225">
+    <main class="outer-page">
+
+        {% include "header.html" %}
+
+
+        <div class="jssor-carousel-container camera-carousel-container aspectratio16-9">
+            <div class="jssor-carousel-wrapper jssor-home-wrapper aspectratio16-9">
+                <div class="jssor-carousel" data-jssortransition="Fade" data-slideinterval="60000" id="homeCarousel">
+                    <div class="sliders-jssor" data-u="slides">
+                        {% comment %} <div class="item"><img class="img-responsive" data-aspectratio="16-9" data-src2="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
+                                data-u="image" height="768" src="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg" style="aspect-ratio: 1920/1080; "
+                                width="1366" /></div> {% endcomment %}
+                        {% for property in properties %} 
+                        <div class="item">
+                            <img class="img-responsive" data-aspectratio="16-9" data-src2="{{property.image.url}}" data-u="image" height="768" loading="lazy" width="1366" />
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="carousel-caption-wrapper" data-autocenter="2" data-scale="0" data-scale-bottom="0">
+                        <div class="jssor-caption camera_caption center-vertical right-position aspectratio16-9">
+                            <div class="caption-as-text"><a class="internal-link" data-page-id="866189" href="./aotel-by-clarks-inn-palampur/" target="_self">#internal_link__866189</a></div>
+                        </div>
+                        <div class="jssor-caption camera_caption center-vertical right-position aspectratio16-9"><a class="caption-as-link" href="./clarks-inn-express-rishikesh/" target="_blank"></a>
+                            <div><a class="caption-as-link" href="./clarks-inn-express-rishikesh/" target="_blank"></a><a class="internal-link" data-page-id="847048" href="./clarks-inn-express-rishikesh/" target="_self">#internal_link__847048</a></div>
+                        </div>
+                        <div class="jssor-caption camera_caption center-vertical right-position aspectratio16-9"><a class="caption-as-link" href="./albatross-by-the-clarks-digana-sri-lanka/" target="_blank"></a>
+                            <div><a class="caption-as-link" href="./albatross-by-the-clarks-digana-sri-lanka/" target="_blank"></a><a class="internal-link" data-page-id="830191" href="./albatross-by-the-clarks-digana-sri-lanka/" target="_self">#internal_link__830191</a></div>
+                        </div>
+                        <div class="jssor-caption camera_caption center-vertical right-position aspectratio16-9"><a class="caption-as-link" href="./clarks-inn-express-ludhiana/" target="_blank"></a>
+                            <div><a class="caption-as-link" href="./clarks-inn-express-ludhiana/" target="_blank"></a><a class="internal-link" data-page-id="825827" href="./clarks-inn-express-ludhiana/" target="_self">#internal_link__825827</a></div>
+                        </div>
+                        <div class="jssor-caption camera_caption center-vertical right-position aspectratio16-9"><a class="caption-as-link" href="./clarks-inn-suites-mandi/" target="_blank"></a>
+                            <div><a class="caption-as-link" href="./clarks-inn-suites-mandi/" target="_blank"></a><a class="internal-link" data-page-id="846213" href="./clarks-inn-suites-mandi/" target="_self">#internal_link__846213</a></div>
+                        </div>
+                        <div class="jssor-caption camera_caption center-vertical right-position aspectratio16-9"><a class="caption-as-link" href="./clarks-inn-suites-manali/"></a>
+                            <div><a class="caption-as-link" href="./clarks-inn-suites-manali/"></a><a class="internal-link" data-page-id="836613" href="./clarks-inn-suites-manali/" target="_self">#internal_link__836613</a></div>
+                        </div>
+                        <div class="jssor-caption camera_caption center-vertical right-position aspectratio16-9"><a class="caption-as-link" href="./clarks-offers/book-direct-and-save-20.html"></a>
+                            <div><a class="caption-as-link" href="./clarks-offers/book-direct-and-save-20.html"></a><a class="internal-link" data-page-id="816725" href="./clarks-exotica-nature-resort-rajgarh/" target="_self">#internal_link__816725</a></div>
+                        </div>
+                    </div>
+                    <div class="jssorb036" data-autocenter="1" data-scale="0" data-scale-bottom="0" data-u="navigator">
+                        <div class="bullet-icon" data-u="prototype"><svg viewbox="0 0 16000 16000"><rect class="bullet-indicators" height="16000" rx="50%" ry="50%" width="16000" x="0" y="0"></rect></svg></div>
+                    </div>
+                    <div class="jssora051 arrowleft-jssor" data-autocenter="2" data-scale="0" data-scale-left="0" data-u="arrowleft"><svg viewbox="0 0 16000 16000"><polyline class="jssor-arrows" points="11040,1920 4960,8000 11040,14080 "></polyline></svg></div>
+                    <div class="jssora051 arrowright-jssor" data-autocenter="2" data-scale="0" data-scale-right="0" data-u="arrowright"><svg viewbox="0 0 16000 16000"><polyline class="jssor-arrows" points="4960,1920 11040,8000 4960,14080 "></polyline></svg></div>
+                </div>
+            </div>
+            <div class="weather-time-widget-holder"></div>
+            <div class="bookingform-wrapper">
+                <div class="abs_parent">
+                    <div class="sm_booking_form clearfix booking-form booking-form-vc-desktop" id="bookingForm">
+
+                        <div class="form-group select-block select-location"><label>Location</label>
+                            <div><select class="form-control" id="booking-engine-groups"><option data-group_id="19858" selected="">Agra</option><option data-group_id="21591">Ahmedabad</option><option data-group_id="20056">Aligarh</option></select></div>
+                        </div>
+
+                        <div class="form-group select-block select-hotel"><label>Hotel</label>
+                            <div><select class="form-control" id="booking-engine-hotels"><option data-group_id="19858" data-hotel_id="6349" selected="">Bhawna Clarks Inn, Near Taj Mahal</option><option data-group_id="19858" data-hotel_id="6825">Neel Clarks Inn Express, Near Taj Mahal</option></select></div>
+                        </div>
+
+                        <div class="form-group hidden select-block select-hotel"><label>Hotel</label>
+                            <div><select class="form-control" id="booking-engine-hotels-clone"><option data-group_id="19858" data-hotel_id="6349">Bhawna Clarks Inn, Near Taj Mahal</option><option data-group_id="19858" data-hotel_id="6825">Neel Clarks Inn Express, Near Taj Mahal</option><option data-group_id="21591" data-hotel_id="9290">Clarks Safari Kheda, Ahmedabad</option><option data-group_id="20056" data-hotel_id="6824">Clarks Inn, Aligarh</option><option data-group_id="19882" data-hotel_id="6610">Bharawan Clarks Inn Express, Near Golden Temple</option><option data-group_id="19882" data-hotel_id="6680">HK Clarks Inn, Near Golden Temple</option><option data-group_id="21101" data-hotel_id="8471">Clarks Inn, Ambala</option><option data-group_id="21175" data-hotel_id="8532">Clarks Inn Express, Ayodhya</option><option data-group_id="19860" data-hotel_id="6227">Clarks Inn, Near Badami Caves</option><option data-group_id="20206" data-hotel_id="7031">Clarks Inn Express, Baddi</option><option data-group_id="19990" data-hotel_id="6714">Clarks Inn, Bangalore Airport</option><option data-group_id="19965" data-hotel_id="6682">Clarks Inn, Behind Bagalkot Railway Station</option><option data-group_id="19861" data-hotel_id="6372">Aakriti Clarks Inn Express, Opposite Satellite Bus Stand</option><option data-group_id="21724" data-hotel_id="9456">Clarks Inn, Bathinda</option><option data-group_id="20213" data-hotel_id="7057">Clarks Inn Express, Bharatpur</option><option data-group_id="20003" data-hotel_id="6364">Clarks Collection, Bhavnagar</option><option data-group_id="20935" data-hotel_id="8238">The Imperial Prime Clarks Inn Suites, Bhilwara</option><option data-group_id="19862" data-hotel_id="6233">Fairyland Clarks Inn, Bhopal</option><option data-group_id="19843" data-hotel_id="6236">Seven Sky Clarks Exotica, Near Bhuj Airport</option><option data-group_id="20042" data-hotel_id="6815">Raaj Bhaavan Clarks Inn Chennai OMR</option><option data-group_id="19864" data-hotel_id="6234">JK Clarks Exotica, Near Dalhousie Mall Road</option><option data-group_id="20468" data-hotel_id="7486">Clarks Inn Express, Dehradun</option><option data-group_id="20009" data-hotel_id="6780">Clarks Inn, Dudhwa</option><option data-group_id="19865" data-hotel_id="6235">Keshav Clarks Inn, Gadag</option><option data-group_id="20269" data-hotel_id="6882">Casa Arya Villa, Candolim</option><option data-group_id="20269" data-hotel_id="7187">Cosmique Clarks Inn Suites, Goa Margao</option><option data-group_id="20269" data-hotel_id="7208">Divan Clarks Inn, Goa Calangute</option><option data-group_id="19831" data-hotel_id="6228">DS Clarks Inn, Near Gurgaon Old Judicial Complex</option><option data-group_id="19866" data-hotel_id="6352">Clarks Inn Suites, Near Gwalior DD Mall</option><option data-group_id="20575" data-hotel_id="7653">Clarks Inn, Hampi</option><option data-group_id="19867" data-hotel_id="6401">AB Clarks Inn, Near Jawahar Nagar</option><option data-group_id="19868" data-hotel_id="6350">Clarks Inn Express, Near Jammu Bari Brahmana Railway Station</option><option data-group_id="20470" data-hotel_id="7489">Clarks Safari, Jawai</option><option data-group_id="19879" data-hotel_id="6607">Clarks Inn Suites, Near Kangra Mata Temple</option><option data-group_id="19849" data-hotel_id="6381">Heaven View Clarks Inn, Kanpur</option><option data-group_id="19869" data-hotel_id="6229">Clarks Inn Suites, Near Yatra Parchi Counter</option><option data-group_id="19850" data-hotel_id="6403">Clarks Premier, Kota</option><option data-group_id="21096" data-hotel_id="8461">KVR Clarks Inn Kufri, Shimla</option><option data-group_id="19870" data-hotel_id="6238">Triguna Clarks Inn, Kurnool</option><option data-group_id="19830" data-hotel_id="6232">Divine Clarks Inn Suites, Near Bramha Saro</option><option data-group_id="19844" data-hotel_id="6389">Deep Clarks Inn, Near Gomti Nagar</option><option data-group_id="19844" data-hotel_id="6356">Sapna Clarks Inn, Near Hazaratganj</option><option data-group_id="20189" data-hotel_id="7013">Clarks Inn Express, Ludhiana</option><option data-group_id="20591" data-hotel_id="7680">Clarks Inn Suites, Manali</option><option data-group_id="20922" data-hotel_id="8165">SPT Clarks Inn Suites, Mandi</option><option data-group_id="19871" data-hotel_id="6354">MB Greens Clarks Inn, Near Prem Wonderland</option><option data-group_id="19845" data-hotel_id="6357">Starz Clarks Inn, Near Mussoorie Mall Road</option><option data-group_id="19851" data-hotel_id="6380">Emerald Clarks Inn Suites, Near Mysore Palace</option><option data-group_id="19851" data-hotel_id="7592">Clarks Inn Express, KRS Road, Mysore</option><option data-group_id="19852" data-hotel_id="6404">Jay Clarks Exotica, Nahan</option><option data-group_id="19832" data-hotel_id="6231">Clarks Residences, Nainital</option><option data-group_id="21465" data-hotel_id="9089">aôtel by clarks inn, Palampur</option><option data-group_id="19829" data-hotel_id="6226">ANA Clarks Inn, Near Amravati Enclave</option><option data-group_id="19854" data-hotel_id="6405">Vijayatej Clarks Inn, Patna</option><option data-group_id="19853" data-hotel_id="6237">Tarawade Clarks Inn, Shivajinagar</option><option data-group_id="19960" data-hotel_id="6363">Clarks Safari, Pushkar</option><option data-group_id="20939" data-hotel_id="8221">Clarks Exotica Island House, Port Blair</option><option data-group_id="19872" data-hotel_id="6355">OM Clarks Inn, Raebareli</option><option data-group_id="19873" data-hotel_id="6230">Clarks Inn Suites, Near Raipur Airport</option><option data-group_id="19874" data-hotel_id="6457">Clarks Exotica Nature Resort, Near Apple Jam Factory</option><option data-group_id="19875" data-hotel_id="6373">Clarks Exotica Resort, Near Mukhteshwar</option><option data-group_id="19961" data-hotel_id="7309">Clarks Inn Suites, Ranthambore</option><option data-group_id="19961" data-hotel_id="6450">Clarks Safari, Ranthambore</option><option data-group_id="20940" data-hotel_id="8219">Clarks Inn Express, Rishikesh</option><option data-group_id="20241" data-hotel_id="7127">Clarks Inn Express, Sirkazhi</option><option data-group_id="19876" data-hotel_id="6500">Ashiana Clarks Inn, Near Shimla Mall Road</option><option data-group_id="19877" data-hotel_id="6351">Green View Clarks Inn, Near Elephant Camps &amp; Jog Falls</option><option data-group_id="21028" data-hotel_id="8388">Clarks Collection, Somnath</option><option data-group_id="19998" data-hotel_id="6713">Clarks Inn, Near Lal Chaulk</option><option data-group_id="20372" data-hotel_id="7363">Albatross Villas &amp; Suites by The Clarks, Kandy Sri Lanka</option><option data-group_id="20372" data-hotel_id="8385">Celestial Hills - Villas &amp; Suites by The Clarks, Kandy</option><option data-group_id="20004" data-hotel_id="6365">Clarks Collection, Vadodara</option><option data-group_id="20029" data-hotel_id="6800">Anandam Clarks Inn Suites, Vrindavan</option><option data-group_id="20697" data-hotel_id="6358">Velvet Clarks Exotica, Zirakpur</option><option data-group_id="20192" data-hotel_id="7014">Clarks Exotica, Kamadhoo Maldives</option></select></div>
+                        </div>
+
+
+                        <div class="whyBookDirect" style=""><a class="active">Why Book Direct?</a>
+                            <div class="wrapperOfBenefits">
+                                <ul class="benefitList">
+                                    <li class="listItem"><i class="far fas fa-asterisk"></i>Lowest Price Guaranteed</li>
+                                    <li class="listItem"><i class="far far fa-asterisk"></i>Get Exclusive Inclusions</li>
+                                    <li class="listItem"><i class="far far fa-asterisk"></i>Easy amendments / cancellation</li>
+                                    <li class="listItem"><i class="far far fa-asterisk"></i>Complete Tranquility (Book directly, No intermediary)</li>
+                                    <li class="listItem"><i class="far far fa-asterisk"></i>Website Booking Benefits</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <form class="sm_booking_form booking-form booking-button" data-engine="simplotel" data-group_id="19858" data-hotel_id="6349" id="booking-form"><input id="check_in" name="checkIn" type="hidden" /><input id="check_out" name="checkOut" type="hidden"
+                            />
+                            <div class="form-group date-parameter-block tohide"><label>Check In</label>
+                                <div class="dp-holder"><input class="arrival-date-input form-control" id="" name="" type="text" /><span class="fa fa-calendar"></span></div>
+                            </div>
+                            <div class="form-group date-parameter-block tohide"><label>Check Out</label>
+                                <div class="dp-holder"><input class="departure-date-input form-control" id="" name="" type="text" /><span class="fa fa-calendar"></span></div>
+                            </div>
+                            <div class="adult-wrapper">
+                                <div class="form-group adult-block tohide"><label for="adults">Adults</label>
+                                    <div><select class="form-control" data-meta="2" id="adults_id" name="adults"><option value="1">1</option><option selected="" value="2">2</option><option value="3">3</option></select></div>
+                                </div>
+                            </div>
+                            <div class="child-wrapper">
+                                <div class="form-group child-block tohide" data-placement="bottom" data-toggle="tooltip" title="Age : 5-11 Years"><label for="children">Children</label>
+                                    <div><select class="form-control" data-meta="0" id="children_id" name="children"><option selected="" value="0">0</option><option value="1">1</option><option value="2">2</option></select></div>
+                                </div>
+                            </div>
+                            <div class="form-group promo-block text-field tohide"><label for="promocode">Promo Code</label>
+                                <div class="tb-holder"><input class="form-control" data-meta="current_hotel.showPromocode" id="promo_code" name="promocode" type="text" value="" /></div>
+                            </div>
+                            <div class="form-group min-price-wrapper"><input class="min-room-price" data-meta="" type="hidden" value="" /></div>
+                            <div class="btn-wrapper">
+                                <div class="form-group check-btn-holder"><input class="btn btn-full-width" data-meta="" id="" name="" type="submit" value="Book Now" /></div>
+                            </div><input class="common" data-checkindate="Today" data-checkindateselected="" data-childmaxage="11" data-childminage="5" data-lengthofstay="1" data-lengthofstayselected="" data-propertytype="chain" data-resbtnname="Book Now" type="hidden"
+                            /></form>
+                        <div class="open-form-block vc_open-form-block booking-button"><a class="open-booking-form" href="#"><span class="link-text">More Options</span> <i class="fa fa-lg fa-plus-circle link-icon"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="homepage">
+            <div class="container-wrapper">
+                <div class="clearfix address-block-details text-center">
+                    <div class="hotel-info col-xs-12">
+                        <h1 class="hotel-heading"></h1>
+                    </div>
+                    <div class="hotel-contacts col-xs-12"><address class="row"><h6 class="hotel-address">707 Emaar Capital Tower, Mehrauli - Gurgaon Road, Sector 26 Gurugram - Haryana 122002</h6><div class="address-telephone"><div class="telephone-number-block"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-phone fa-stack-1x"></i></span> <span class="telephone-number">1800 202 7707 | Toll Free Number</span></div><div class="telephone-number-block"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-phone fa-stack-1x"></i></span> <span class="telephone-number">+91 971717 0578 | Central Reservation</span></div><div class="address-email"><a href="mailto:centralreservations@theclarkshotels.com?Subject=Enquiry" target="_top"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-envelope fa-stack-1x"></i></span> <span class="email-id">centralreservations@theclarkshotels.com</span></a></div></div></address></div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="content_wrapper">
+                        <div class="no-gutter clearfix">
+                            {% comment %} -----------------------------moota wala line---------------------- {% endcomment %}
+                            <div class="clearfix widget-wrapper wt1tb fullWidthWidget simp-custom-text-banner simp-custom-address-bar" data-widget-id="2296196" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h2>India's Fastest<br/> Growing Hotel Chain</h2>
+                                            <p><strong>01</strong><br/> Countries</p>
+                                            <p><strong>3+</strong><br/> Destinations</p>
+                                            <p><strong>5+</strong><br/> Hotels</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% comment %} -------------------------Explore-unexplore--------------------- {% endcomment %}
+
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-home-explore-text" data-widget-id="2292648" style="">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <h2>Explore The Unexplored!</h2>
+                                        <p>Enjoy the thrill of spotting rare birds during the day time. Unwind with a book by the warm fireplace indoors, or step outside and gather around a bonfire under a vibrant night sky for a truly quintessential Kumaon experience. Embark on exhilarating hikes along nearby nature trails to immerse yourself in the surrounding wilderness. Located just 22 kilometers from bustling Nainital, Bhimtal invites you to a peaceful getaway destination.</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider nonFullWidthWidget simp-custom-home-explore-slider" data-widget-id="2292649" style=" ">
+                                {% for property in properties  %} 
+                                <div class="col-xs-12 one-col text-content"><img alt="Clarks Exotica Rajgarh" class="img-responsive image-content-29" loading="lazy" src="{{property.image.url}}"
+                                        style="aspect-ratio: 1127/634; " />
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <p><a class="internal-link" data-page-id="816725" href="./clarks-exotica-nature-resort-rajgarh/" target="_self">#internal_link__816725</a></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                               
+                            </div>
+
+                             {% comment %} -------------------------Explore-unexplore----end-------------- {% endcomment %}
+
+
+
+                            <div class="clearfix widget-wrapper imageDescriptionSide imageDescriptionSide-leftimage two-col fullWidthWidget simp-custom-new-limage-rtext" data-widget-id="2310925" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-md-6 left-box"><img alt="Cover-01 (1)" class="img-responsive image-content" height="256" loading="lazy" src="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
+                                            style="aspect-ratio: 4998/2812; " width="455" /></div>
+                                    <div class="col-md-6 right-box">
+                                        <div class="text-content">
+                                            <div class="text-content-wrapper">
+                                                <p></p>
+                                                <h2>THE STAY BLISS RETREATS</h2>
+                                                <p>Stay Bliss Retreat is Collection of Hotels & Resorts in North India. With the expertise of more than 20 years in we are currently operating in Chail (Shimla), Dharamshala,Bhimtal and Ayodhya. The handpicked properties will always give an immense pleasure of Hospitality in every manner.</p>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% comment %} -------------------------4 section------------------------ {% endcomment %}
+
+
+
+
+                            <div class="clearfix widget-wrapper wt1tb fullWidthWidget simp-custom-padding-top" data-widget-id="2294666" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h2 style="text-align: center;">Explore Our Properties</h2>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider fullWidthWidget simp-custom-media simp-custom-explore-changes" data-widget-id="2299922" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+
+                                    {% for property in properties %}         
+                                    <div class="col-xs-12 one-col text-content"><img alt="Explore-02" class="img-responsive Image-content-29" loading="lazy" src="{{property.image.url}}"
+                                            style="aspect-ratio: 4500/4500;"/>
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <p><a class="internal-link" data-page-id="853279" href="{{web_link.property}}" target="_self">{{property.name}}</a></p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            
+                             {% comment %} -------------------------4 section-end----------------------- {% endcomment %}
+                            <div></div>
+
+
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-offer-header simp-custom-hide-widget" data-widget-id="2292613" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <h4>Offers &amp; Promotions</h4>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider fullWidthWidget simp-custom-offer-slider simp-custom-hide-widget" data-widget-id="2292775" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider2" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_323,h_323,r_0,c_crop,q_80,fl_progressive/w_323,f_auto,c_fit/the-clarks-hotels-resorts/parentslider2_tysmrg"
+                                            style="aspect-ratio: 323/323; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>New Year's Package</h6>
+                                            <p>Start the New Year with a celebration to remember! The Clarks Hotels &amp; Resorts offers amazing New Year's packages curated just for you.</p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Book Now</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider3" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_437,h_437,r_0,c_crop,q_80,fl_progressive/w_437,f_auto,c_fit/the-clarks-hotels-resorts/parentslider3_leijot"
+                                            style="aspect-ratio: 437/437; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Direct Booking Offer</h6>
+                                            <p>Book your stays at The Clarks Hotels &amp; Resorts directly through our website and get an amazing 20% off on the best available rates!</p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Book Now</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider2" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_323,h_323,r_0,c_crop,q_80,fl_progressive/w_323,f_auto,c_fit/the-clarks-hotels-resorts/parentslider2_tysmrg"
+                                            style="aspect-ratio: 323/323; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum Lorem</h6>
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Book Now</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 one-col text-content"><img alt="parentslider1" class="img-responsive image-content-29" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_437,h_437,r_0,c_crop,q_80,fl_progressive/w_437,f_auto,c_fit/the-clarks-hotels-resorts/parentslider1_k4kuyn"
+                                            style="aspect-ratio: 437/437; " />
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h6>Lorem Ipsum Lorem</h6>
+                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Book Now</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper imageDescriptionSide imageDescriptionSide-leftimage two-col bgImageContainer fullWidthWidget simp-custom-clarks-home-newExp-lImgRTxt simp-custom-hide-widget" data-widget-id="2292577" style=" background-image: url(https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_486,w_5000,h_2424,r_0,c_crop,q_80,fl_progressive/w_1350,f_auto,c_fit/the-clarks-hotels-resorts/Premium_Cottage_02_qusjsz_v6zf4n);">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-md-6 left-box"><img alt="Premium Cottage 02" class="img-responsive image-content" height="256" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_1270,y_757,w_3730,h_1864,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/the-clarks-hotels-resorts/Premium_Cottage_02_qusjsz"
+                                            style="aspect-ratio: 3730/1864; " width="455" /></div>
+                                    <div class="col-md-6 right-box">
+                                        <div class="text-content">
+                                            <div class="text-content-wrapper">
+                                                <p></p>
+                                                <h5>It’s time to find a new Experience</h5>
+                                                <div contenteditable="false" tabindex="-1">
+                                                    <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815280" href="./clarks-offers.html" target="_self"><span class="text">Explore Now</span></a></div>
+                                                </div>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1tb fullWidthWidget simp-custom-whatmakesUs simp-custom-hide-widget" data-widget-id="2292845" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h4>WHAT MAKES US STAND OUT?</h4><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_352,f_auto,c_limit/the-clarks-hotels-resorts/icon1_edz2mk" /><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_352,f_auto,c_limit/the-clarks-hotels-resorts/icon2_ptfci6"
+                                            /><img src="https://res.cloudinary.com/simplotel/image/upload/q_90,fl_progressive,w_352,f_auto,c_limit/the-clarks-hotels-resorts/icon3_clhkyw" />
+                                            <div class="threetxt">
+                                                <h6>Trust</h6>
+                                                <h6>Respect</h6>
+                                                <h6>Passion</h6>
+                                            </div>
+                                            <p>We are backed by our Ethics!</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% comment %} ----------------------------media----------------------- {% endcomment %}
+                            <div class="clearfix widget-wrapper wt1tb bgColorContainer fullWidthWidget simp-custom-media-news-header" data-widget-id="2292846" style="background-color: #fff; ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <h2>Media &amp; News</h2>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% for media in media %}
+                            <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider bgColorContainer fullWidthWidget simp-custom-media" data-widget-id="2295880" style="background-color: #fff; ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content"><img alt="Web-04" class="img-responsive image-content-29" loading="lazy" src="{{media.image.url}}"
+                                            style="aspect-ratio: 2812/2812;"/>
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <p>{{media.name}}</p><a href="https://stayblissretreats.com" target="_blank"><span>{{media.description}}</span></a>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+
+                            {% comment %} -------------------------------------about---------------------------------- {% endcomment %}
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-home-explore-text simp-custom-blog-padding" data-widget-id="2292853" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <h2>About | The Stay Bliss Retreats</h2>
+                                        <p>Stay Bliss Villa, Bhimtal Step into a world where contemporary villa under the sun, revealing extraordinary views that stir the soul. Here, amidst the breathtaking landscape, awaits the warmest hospitality, inviting you to experience the magic of Stay Bliss Villa
+                                            Whether you're seeking a quiet retreat or a space for family gatherings, Stay Bliss Villa caters to your needs.</p>
+                                        <!-- <div contenteditable="false" tabindex="-1">
+                                            <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="815273" href="./blogs.html" target="_self"><span class="text">About Us</span></a></div>
+                                        </div> -->
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider nonFullWidthWidget simp-custom-home-explore-slider simp-custom-new-slider simp-custom-hide-only-mobile" data-widget-id="2292854"
+                                style=" ">
+                                {% for property in properties  %} 
+                                <div class="col-xs-12 one-col text-content"><img alt="Cover-01" class="img-responsive image-content-29" loading="lazy" src="{{property.image.url}}"
+                                        style="aspect-ratio: 4998/2812; " />
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <p>none</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            
+                            {% comment %} -----------------------video------------------------- {% endcomment %}
+
+
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-brand-video" data-widget-id="2296203" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p><video autoplay="" class="elementor-video" controlslist="nodownload" loop="" muted="muted" playsinline="" preload="none" src="https://stayblissimages.s3.amazonaws.com/footer_video.mp4"
+                                                width="100%"> </video></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            {% comment %} -----------------------newsletter------------------------- {% endcomment %}
+                            <div class="clearfix widget-wrapper wtformjson fullWidthWidget simp-custom-news-letter-form" data-widget-id="2292870" style=" ">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-sm-12 one-col">
+                                        <form class="form-horizontal" enctype="multipart/form-data" id="form-6225-814983-3561661" role="form"><input id="form-id" type="hidden" value="6225-814983-3561661" />
+                                            <fieldset>
+                                                <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1703167224204">Newsletter</label>
+                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_email" id="textbox_1703167224204" name="textbox_name_1703167224204" placeholder="Email Address" required="" type="email" /></div>
+                                                </div>
+                                                <div class="col-sm-8" id="message-6225-814983-3561661"></div><input name="message" type="hidden" value="6225-814983-3561661" /><input id="msg-6225-814983-3561661" type="hidden" value="Submitted Successfully" /><input id="errmsg-6225-814983-3561661" type="hidden"
+                                                    value="We are sorry - something went wrong. Please try again after refreshing the page" />
+                                                <div class="form-group col-sm-12" id="form-group-submit"><label class="col-sm-12 col-md-2"> </label>
+                                                    <div class="col-sm-12 col-md-6"><button class="btn btn-forms btn-full-width formSubmitButton" id="btn-6225-814983-3561661" type="button">Submit</button></div>
+                                                </div>
+                                            </fieldset><input class="subscribe_api" name="subscribe_api" type="hidden" value="https://bookings.simplotel.com/subscribeForm?language=en" />
+                                            <div class="modal fade recaptcha-modal" id="contact_google_recaptcha_modal-6225-814983-3561661"
+                                                role="dialog">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header"><button class="close" data-dismiss="modal" type="button">×</button>
+                                                            <h4 class="modal-title">Please Select CheckBox</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="recaptcha-widget" id="contactFormFubscribeRecaptcha-6225-814983-3561661"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+{% comment %} 
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-hero-text simp-custom-hide-widget" data-widget-id="2292885" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <h1>Welcome To The Clarks Hotels &amp; Resorts</h1>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1tb simp-custom-width simp-custom-hide-widget" data-widget-id="2246174" style=" ">
+                                <div class="col-xs-12 one-col text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <div style="text-align: center;">The Clarks brand strives to bring together the frills expected by modern travellers with the standard goodness of traditional hospitality. A brand associated with premium accommodations at affordable prices, The
+                                            Clarks Hotels &amp; Resorts is now a group of 100+ unique hotels, resorts, service apartments and inns across 8 brands catering to differing tastes.<br/> <br/> We welcome you to stay, feast and rejoice at The
+                                            Clarks and become a part of an ever-growing family!</div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt3tb three-col simp-custom-fifty simp-custom-mobile-alignment simp-custom-hide-widget" data-widget-id="2198296" style=" ">
+                                <div class="col-sm-4 left-box text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <div style="text-align: center;"><span aria-hidden="true" class="fas fa-hotel" style="font-size: 42px;"></span><span style="color:#333333;"></span></div>
+                                        <h3 style="text-align: center;"><span style="color:#333333;">115+ Hotels</span></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 center-box text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <div style="text-align: center;"><span aria-hidden="true" class="fas fa-map-marked-alt" style="font-size: 42px;"></span></div>
+                                        <h3 style="text-align: center;"><span style="color:#555555;">100 Destinations</span></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 right-box text-content">
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <div style="text-align: center;"><span aria-hidden="true" class="fas fa-crown" style="font-size: 42px;"></span></div>
+                                        <h3 style="text-align: center;"><span style="color:#555555;">10 Brands</span></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix widget-wrapper wt1tb bgImageContainer fullWidthWidget simp-custom-hide-widget" data-widget-id="2243699" style=" background-image: url(https://res.cloudinary.com/simplotel/image/upload/w_5000,h_2812/x_0,y_0,w_5000,h_2812,r_0,c_crop,q_80,fl_progressive/w_1350,f_auto,c_fit/the-clarks-hotels-resorts/home-01_lmqtx0);">
+                                <div class="fullWidthWidgetWrapper clearfix">
+                                    <div class="col-xs-12 one-col text-content">
+                                        <div class="text-content-wrapper">
+                                            <p></p>
+                                            <div contenteditable="false" tabindex="-1">
+                                                <div class="txt-wdgt-btn-wrapper" data-widget="btbutton" style="text-align: left;"><a class="btn txt-wdgt-btn btn-default pull-left internal-link" data-linktype="internalpagelink" data-page-id="821656" href="./clarks-offers/book-direct-and-save-20.html" target="_self"><span class="text">Know More</span></a></div>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             {% endcomment %}
+
+
+                        </div>
+                        <div class="no-gutter clearfix">
+                            <div class="widget-wrapper">
+                                <div class="social_feed clearfix section_bg"></div>
+                                <div class="promotions_block clearfix"></div>
+                                <div class="location_map_block clearfix"></div>
+                                <div class="custom_widgets_block clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        {% comment %} ---------------------------------------------------------------------------------------- {% endcomment %}
+        {% include "footer.html" %}
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p id="back-top"><a class="up" href="#top"><span class="fa fa-angle-down"></span></a></p>
+        </main>
+        <div id="fb-root"></div><input id="assetRelPath" type="hidden" value="./" /><input id="device" type="hidden" value="desktop" /><input id="template_type" type="hidden" value="common" /><input id="hotel_id" type="hidden" value="6225" /><input id="bookingUrl" type="hidden"
+            value="https://bookings.theclarkshotels.com" /><input id="bookingUrlApi" type="hidden" value="https://bookings.simplotel.com/" /><input id="websiteMessagingStatus" type="hidden" value="True" /><input id="parent_hotel_id" type="hidden" value="6225"
+        />
+        <div id="booking-modal-toggle-skel" style="display: none;"><button class="btn booking-modal-toggle resv_button" data-target="#resv-form" data-toggle="modal">Book Now</button></div>
+        <div aria-labelledby="myModalLabel" class="modal fade inner-page-booking-modal" id="hotelBookModal" role="dialog" tabindex="-1">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="close-wrap">
+                            <div class="close-text">Close</div>
+                        </div>
+                        <h4 class="modal-title" id="myModalLabel">Book Now</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="booking-form-wrapper"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"><svg data-name="Layer 1" id="Layer_1" viewbox="0 0 46.09 45.63" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#a8a7a8;}</style></defs><title>Close</title><rect class="cls-1" height="0.77" transform="translate(256.16 715.69) rotate(-134.72)" width="32.07" x="655.97" y="321.5"></rect><rect class="cls-1" height="0.77" transform="translate(730.96 -194.29) rotate(135.28)" width="32.07" x="655.59" y="343.63"></rect><rect class="cls-1" height="0.78" transform="translate(-209.8 -701.29) rotate(45.28)" width="32.26" x="677.79" y="343.69"></rect><rect class="cls-1" height="0.78" transform="translate(-685.44 271.49) rotate(-44.72)" width="32.26" x="678.18" y="321.42"></rect></svg></span></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden"></div>
+
+
+        {% comment %} ---------------------------------------------------------------------------------------- {% endcomment %}
+        {% include "script.html" %}
+</body>
+
+</html>
+
+
+
+<!-- <script>
+    document.getElementById('booking-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        const location = document.getElementById('booking-engine-groups').value;
+        const hotel = document.getElementById('booking-engine-hotels').value;
+        const checkIn = document.querySelector('.arrival-date-input').value;
+        const checkOut = document.querySelector('.departure-date-input').value;
+
+        const message = `Booking Details:\nLocation: ${location}\nHotel: ${hotel}\nCheck In: ${checkIn}\nCheck Out: ${checkOut}`;
+        
+        const whatsappNumber = '916205440296';
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        
+        window.open(whatsappLink, '_blank');
+    });
+</script> -->
