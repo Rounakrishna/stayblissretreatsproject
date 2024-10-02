@@ -62,6 +62,29 @@ header .navbar-top #resv-form .booking-form-wrapper #bookingForm .vc_tohide {
     }
 }
 
+@media screen and (min-width:1034px){
+    #menuFilterLoc .mega-menu {
+        padding: 100px 100px 50px !important;
+        left: 70px;
+        right: 0
+    }
+}
+
+@media screen and (min-width:1120px){
+    #menuFilterLoc .mega-menu {
+        padding: 100px 100px 50px !important;
+        left: 120px;
+        right: 0
+    }
+}
+
+@media screen and (min-width:1330px){
+    #menuFilterLoc .mega-menu {
+        padding: 100px 100px 50px !important;
+        left: 190px;
+        right: 0
+    }
+}
 /*@media screen and (max-width: 1200px){*/
 
 /*    .select-hotel .select2-selection__arrow {*/
@@ -1216,8 +1239,10 @@ header #menuFilterLoc.open .mega-menu#hotelLocMenuList {
     /*background:#fff;*/
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 490px;
+    /* flex-wrap: wrap; */
+    max-height: 200px;
+    min-width: 280px;
+    max-width: 320px;
 }
 
 header .navbar-top .navbar-nav>li .dropdown-menu.mega-menu>li {
@@ -7777,7 +7802,7 @@ header .modal .modal-dialog .modal-content .modal-body button.close span #Layer_
 /*}*/
 
 header #menuFilterLoc .mega-menu#hotelLocMenuList {
-    padding: 70px 100px 30px !important;
+    padding: 20px 25px 20px !important;
     overflow-x: auto;
     overflow-y: auto;
 }
@@ -7792,7 +7817,7 @@ ul#hotelLocMenuList li {
 
 #menuFilterLoc .mega-menu .dropdown-header h4 {
     font-size: 14px !important;
-    line-height: 27px;
+    line-height: 24px;
 }
 
 .parent-hotel .container #top-menu .dropdown-menu.mega-menu>li .dropdown-header ol.ul-top .hotelCardWrapper span.hotelNLocName {
@@ -7831,8 +7856,8 @@ ul#hotelLocMenuList li {
 
 @media screen and (max-width: 1024px) {
     header #menuFilterLoc .mega-menu#hotelLocMenuList {
-        column-count: 5;
-        padding: 70px 30px 30px !important;
+        column-count: 1;
+        padding: 20px 10px 20px !important;
     }
 }
 
