@@ -176,7 +176,82 @@
 
 <body class="child-hotel for-innerpage explorer_chain" data-hotelid="6349">
     <main class="outerpage" id="wrapper">
-        {% include "header.html" %}
+        <!-- {% include "header.html" %} -->
+        <header>
+            <nav class="navbar navbar-top">
+                <div class="container">
+                    <div class="lang-book-wrapper">
+                        <div class="resv-wrap">{% comment %} <button class="resv resv_button book_button" data-target="#resv-form" data-toggle="modal">Book Now</button> {% endcomment %}
+                            <div class="modal fade" id="resv-form" role="dialog" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="booking-form-wrapper"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"><svg data-name="Layer 1" id="Layer_1" viewbox="0 0 46.09 45.63" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#a8a7a8;}</style></defs><title>Close</title><rect class="cls-1" height="0.77" transform="translate(256.16 715.69) rotate(-134.72)" width="32.07" x="655.97" y="321.5"></rect><rect class="cls-1" height="0.77" transform="translate(730.96 -194.29) rotate(135.28)" width="32.07" x="655.59" y="343.63"></rect><rect class="cls-1" height="0.78" transform="translate(-209.8 -701.29) rotate(45.28)" width="32.26" x="677.79" y="343.69"></rect><rect class="cls-1" height="0.78" transform="translate(-685.44 271.49) rotate(-44.72)" width="32.26" x="678.18" y="321.42"></rect></svg></span></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-header"><button class="navbar-toggle collapsed" data-target="#top-menu" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="/"><img alt="Final logo Black1" loading="lazy" src="../../media/logo_header.png" style="width: 250px; height: 280px"/></a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="top-menu" style="overflow: visible !important; width: 100% !important; padding-right: 0px;">
+                    <ul class="nav navbar-nav" id="top-navbar-collapse">
+
+                        
+                        <li class="dropdown primary" id="menuFilterLoc"><a class="has-submenu" data-toggle="dropdown" href="#">Our Hotels<span class="fa fa-angle-down dropdown-arrow"></span></a><input autofocus="" class="fuzzy-search form-control" id="menuLocInput" maxlength="25" placeholder="Search for Destination"
+                                title="Type in a Location Name" type="text" />
+                            <div class="inputSearchIconHolder"><i class="fa fa-search"></i></div>
+                            <p class="menuSearchCardCloseBtn"></p>
+                            <ul class="dropdown-menu mega-menu list hide" id="searchCardResult">
+                                <li class="hotelCardWrapper clearfix" data-hotelid="6349"><a class="cardLayoutImageContainer" href="./bhawna-inn-hotel-in-agra/"><img alt="Bhawna Clarks Inn, Near Taj Mahal" class="img-responsive hotelImg lazyLogoImg" data-img_src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1920,h_1080,r_0,c_crop,q_80,fl_progressive/w_400,c_fit,f_auto/the-clarks-hotels-resorts/Agra_dwz8q5" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_503,y_731,w_2755,h_837,r_0,c_crop,q_90/w_355,h_200,f_auto,c_fit/the-clarks-hotels-resorts/Final_logo_Black1_hbghqk" style="aspect-ratio: 2755/837; "/></a>                                        <a href="./bhawna-inn-hotel-in-agra/"><span class="hide locnhotelname">Agra Bhawna Clarks Inn, Near Taj Mahal</span> <span class="list-name searchHotelNLocName">Bhawna Clarks Inn, Near Taj Mahal</span></a> <a class="hotelVisitBtn btn"
+                                        href="./bhawna-inn-hotel-in-agra/">Visit Hotel</a>
+                                    <div class="form-group min-price-wrapper"><input class="min-room-price" data-meta="" type="hidden" value="" /></div><a class="hotelBeBtn btn pull-right" data-hotel_id="6349" href="">Book Now</a>
+                                </li>
+                                <li class="hotelCardWrapper clearfix" data-hotelid="7014"><a class="cardLayoutImageContainer" href="./clarks-exotica-kamadhoo-maldives/"><img alt="Clarks Exotica, Kamadhoo Maldives" class="img-responsive hotelImg lazyLogoImg" data-img_src="https://res.cloudinary.com/simplotel/image/upload/x_460,y_0,w_3704,h_2084,r_0,c_crop,q_80,fl_progressive/w_400,c_fit,f_auto/clarks-exotica-kamadhoo-maldives/pref_1_dbx49b" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_503,y_731,w_2755,h_837,r_0,c_crop,q_90/w_355,h_200,f_auto,c_fit/the-clarks-hotels-resorts/Final_logo_Black1_hbghqk" style="aspect-ratio: 2755/837; "/></a>                    <a href="./clarks-exotica-kamadhoo-maldives/"><span class="hide locnhotelname">Maldives Clarks Exotica, Kamadhoo Maldives</span> <span class="list-name searchHotelNLocName">Clarks Exotica, Kamadhoo Maldives</span></a> <a class="hotelVisitBtn btn"
+                    href="./clarks-exotica-kamadhoo-maldives/">Visit Hotel</a>
+                                    <div class="form-group min-price-wrapper"><input class="min-room-price" data-meta="" type="hidden" value="" /></div><a class="hotelBeBtn btn pull-right" data-hotel_id="7014" href="">Book Now</a>
+                                </li>
+                            </ul>
+                            <ul class="dropdown-menu mega-menu" id="hotelLocMenuList">
+                                <li class="">
+                                    <div class="dropdown-header">
+                                        <h4 class="locName">Agra</h4>
+                                        <ol class="ul-top">
+                                            <li class="cardsHotelLoc"><span class="fa fa-angle-left"></span> Agra</li>
+                                            <li class="li-space">
+                                                <div class="hotelCardWrapper clearfix" data-hotelid="6349"><a class="cardLayoutImageContainer" href="./bhawna-inn-hotel-in-agra/"><img alt="Bhawna Clarks Inn, Near Taj Mahal" class="img-responsive hotelImg lazyLogoImg" data-img_src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1920,h_1080,r_0,c_crop,q_80,fl_progressive/w_400,c_fit,f_auto/the-clarks-hotels-resorts/Agra_dwz8q5" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_503,y_731,w_2755,h_837,r_0,c_crop,q_90/w_355,h_200,f_auto,c_fit/the-clarks-hotels-resorts/Final_logo_Black1_hbghqk" style="aspect-ratio: 2755/837; "/></a>                                        <a href="./bhawna-inn-hotel-in-agra/"><span class="list-name hotelNLocName">Bhawna Clarks Inn, Near Taj Mahal</span></a> <a class="hotelVisitBtn btn pull-left" href="./bhawna-inn-hotel-in-agra/">Visit Hotel</a>
+                                                    <div
+                                                        class="form-group min-price-wrapper"><input class="min-room-price" data-meta="" type="hidden" value="" /></div><a class="hotelBeBtn btn pull-right" data-hotel_id="6349" href="">Book Now</a></div>
+                                    </li>
+                                    <li class="li-space">
+                                        <div class="hotelCardWrapper clearfix" data-hotelid="6825"><a class="cardLayoutImageContainer" href="./neel-clarks-inn-express-agra/"><img alt="Neel Clarks Inn Express, Near Taj Mahal" class="img-responsive hotelImg lazyLogoImg" data-img_src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_1920,h_1080,r_0,c_crop,q_80,fl_progressive/w_400,c_fit,f_auto/neel-clarks-inn-express-agra/Express_Agra_wubixx" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/x_503,y_731,w_2755,h_837,r_0,c_crop,q_90/w_355,h_200,f_auto,c_fit/the-clarks-hotels-resorts/Final_logo_Black1_hbghqk" style="aspect-ratio: 2755/837; "/></a>                                <a href="./neel-clarks-inn-express-agra/"><span class="list-name hotelNLocName">Neel Clarks Inn Express, Near Taj Mahal</span></a> <a class="hotelVisitBtn btn pull-left" href="./neel-clarks-inn-express-agra/">Visit Hotel</a>
+                                            <div
+                                                class="form-group min-price-wrapper"><input class="min-room-price" data-meta="" type="hidden" value="" /></div><a class="hotelBeBtn btn pull-right" data-hotel_id="6825" href="">Book Now</a></div>
+                                    </li>
+                                    <li class="menuCloseBtn"></li>
+                                    </ol>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+            
+
+                        <li class="primary"><a class="" href="{% url 'gallery' %}">Gallery</a></li>
+                        <li class="primary"><a class="" href="{% url 'packages' %}">Packages</a></li>
+                        <li class="primary"><a class="" href="{% url 'contact' %}">Contact Us</a></li>
+                        <li class="primary"><a class="" href="{% url 'about' %}">About us</a></li>
+                        <li class="primary"><a class="" href="{% url 'carrier' %}">Carrier</a></li>
+                        <li class="primary"><a class="" href="{% url 'testimonial' %}">Testimonial</a></li>
+                        <li class="moreOptions"><a href="#"><i class="fa fa-bars"><span></span></i></a>
+                            <ul class="dropdown-more" style="margin-right:10%"></ul>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
         <div class="inner-page">
             <div class="header-pills-wrapper" data-widget-id="nvp_">
                 <div class="clearfix widget-wrapper header-pills">

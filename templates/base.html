@@ -21,11 +21,33 @@
                         {% comment %} <div class="item"><img class="img-responsive" data-aspectratio="16-9" data-src2="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
                                 data-u="image" height="768" src="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg" style="aspect-ratio: 1920/1080; "
                                 width="1366" /></div> {% endcomment %}
-                        {% for property in properties %} 
+                        <!-- {% for property in properties %} 
                         <div class="item">
                             <img class="img-responsive" data-aspectratio="16-9" data-src2="{{property.image.url}}" data-u="image" height="768" loading="lazy" width="1366" />
                         </div>
-                        {% endfor %}
+                        {% endfor %} -->
+                        
+                        
+                        {% if properties %}
+                        <div class="item"><img alt="Palampur" class="img-responsive" data-aspectratio="16-9" data-src2="{{properties.0.image.url}}"
+                                data-u="image" height="768" src="{{properties.0.image.url}}" style="aspect-ratio: 1920/1080; "
+                                width="1366" /></div>
+                        <div class="item"><img alt="Skyhigh 3" class="img-responsive" data-aspectratio="16-9" data-src2="{{properties.1.image.url}}"
+                                data-u="image" height="768" loading="lazy" width="1366" /></div>
+                        <div class="item"><img alt="Cover-28" class="img-responsive" data-aspectratio="16-9" data-src2="{{properties.2.image.url}}"
+                                data-u="image" height="768" loading="lazy" width="1366" /></div>
+                        <div class="item"><img alt="Standard Room 01" class="img-responsive" data-aspectratio="16-9" data-src2="{{properties.3.image.url}}"
+                                data-u="image" height="768" loading="lazy" width="1366" /></div>
+                        <div class="item"><img alt="Cover-27" class="img-responsive" data-aspectratio="16-9" data-src2="{{properties.0.image.url}}"
+                                data-u="image" height="768" loading="lazy" width="1366" /></div>
+                        <div class="item"><img alt="Manali Cover" class="img-responsive" data-aspectratio="16-9" data-src2="{{properties.1.image.url}}"
+                                data-u="image" height="768" loading="lazy" width="1366" /></div>
+                        <div class="item"><img alt="Pod 02" class="img-responsive" data-aspectratio="16-9" data-src2="{{properties.2.image.url}}"
+                                data-u="image" height="768" loading="lazy" width="1366" /></div>
+                        {% endif %}
+
+                        
+                        
                     </div>
                     <div class="carousel-caption-wrapper" data-autocenter="2" data-scale="0" data-scale-bottom="0">
                         <div class="jssor-caption camera_caption center-vertical right-position aspectratio16-9">
@@ -63,15 +85,30 @@
                     <div class="sm_booking_form clearfix booking-form booking-form-vc-desktop" id="bookingForm">
 
                         <div class="form-group select-block select-location"><label>Location</label>
-                            <div><select class="form-control" id="booking-engine-groups"><option data-group_id="19858" selected="">Agra</option><option data-group_id="21591">Ahmedabad</option><option data-group_id="20056">Aligarh</option></select></div>
+                            <div>
+                                <select class="form-control" id="booking-engine-groups">
+                                    <option data-group_id="19858" selected="">Agra</option>
+                                    <option data-group_id="21591">Ahmedabad</option>
+                                    <option data-group_id="20056">Aligarh</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div class="form-group select-block select-hotel"><label>Hotel</label>
-                            <div><select class="form-control" id="booking-engine-hotels"><option data-group_id="19858" data-hotel_id="6349" selected="">Bhawna Clarks Inn, Near Taj Mahal</option><option data-group_id="19858" data-hotel_id="6825">Neel Clarks Inn Express, Near Taj Mahal</option></select></div>
+                            <div>
+                                <select class="form-control" id="booking-engine-hotels">
+                                    <option data-group_id="19858" data-hotel_id="6349" selected="">Bhawna Clarks Inn, Near Taj Mahal</option>
+                                    <option data-group_id="19858" data-hotel_id="6825">Neel Clarks Inn Express, Near Taj Mahal</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div class="form-group hidden select-block select-hotel"><label>Hotel</label>
-                            <div><select class="form-control" id="booking-engine-hotels-clone"><option data-group_id="19858" data-hotel_id="6349">Bhawna Clarks Inn, Near Taj Mahal</option><option data-group_id="19858" data-hotel_id="6825">Neel Clarks Inn Express, Near Taj Mahal</option><option data-group_id="21591" data-hotel_id="9290">Clarks Safari Kheda, Ahmedabad</option><option data-group_id="20056" data-hotel_id="6824">Clarks Inn, Aligarh</option><option data-group_id="19882" data-hotel_id="6610">Bharawan Clarks Inn Express, Near Golden Temple</option><option data-group_id="19882" data-hotel_id="6680">HK Clarks Inn, Near Golden Temple</option><option data-group_id="21101" data-hotel_id="8471">Clarks Inn, Ambala</option><option data-group_id="21175" data-hotel_id="8532">Clarks Inn Express, Ayodhya</option><option data-group_id="19860" data-hotel_id="6227">Clarks Inn, Near Badami Caves</option><option data-group_id="20206" data-hotel_id="7031">Clarks Inn Express, Baddi</option><option data-group_id="19990" data-hotel_id="6714">Clarks Inn, Bangalore Airport</option><option data-group_id="19965" data-hotel_id="6682">Clarks Inn, Behind Bagalkot Railway Station</option><option data-group_id="19861" data-hotel_id="6372">Aakriti Clarks Inn Express, Opposite Satellite Bus Stand</option><option data-group_id="21724" data-hotel_id="9456">Clarks Inn, Bathinda</option><option data-group_id="20213" data-hotel_id="7057">Clarks Inn Express, Bharatpur</option><option data-group_id="20003" data-hotel_id="6364">Clarks Collection, Bhavnagar</option><option data-group_id="20935" data-hotel_id="8238">The Imperial Prime Clarks Inn Suites, Bhilwara</option><option data-group_id="19862" data-hotel_id="6233">Fairyland Clarks Inn, Bhopal</option><option data-group_id="19843" data-hotel_id="6236">Seven Sky Clarks Exotica, Near Bhuj Airport</option><option data-group_id="20042" data-hotel_id="6815">Raaj Bhaavan Clarks Inn Chennai OMR</option><option data-group_id="19864" data-hotel_id="6234">JK Clarks Exotica, Near Dalhousie Mall Road</option><option data-group_id="20468" data-hotel_id="7486">Clarks Inn Express, Dehradun</option><option data-group_id="20009" data-hotel_id="6780">Clarks Inn, Dudhwa</option><option data-group_id="19865" data-hotel_id="6235">Keshav Clarks Inn, Gadag</option><option data-group_id="20269" data-hotel_id="6882">Casa Arya Villa, Candolim</option><option data-group_id="20269" data-hotel_id="7187">Cosmique Clarks Inn Suites, Goa Margao</option><option data-group_id="20269" data-hotel_id="7208">Divan Clarks Inn, Goa Calangute</option><option data-group_id="19831" data-hotel_id="6228">DS Clarks Inn, Near Gurgaon Old Judicial Complex</option><option data-group_id="19866" data-hotel_id="6352">Clarks Inn Suites, Near Gwalior DD Mall</option><option data-group_id="20575" data-hotel_id="7653">Clarks Inn, Hampi</option><option data-group_id="19867" data-hotel_id="6401">AB Clarks Inn, Near Jawahar Nagar</option><option data-group_id="19868" data-hotel_id="6350">Clarks Inn Express, Near Jammu Bari Brahmana Railway Station</option><option data-group_id="20470" data-hotel_id="7489">Clarks Safari, Jawai</option><option data-group_id="19879" data-hotel_id="6607">Clarks Inn Suites, Near Kangra Mata Temple</option><option data-group_id="19849" data-hotel_id="6381">Heaven View Clarks Inn, Kanpur</option><option data-group_id="19869" data-hotel_id="6229">Clarks Inn Suites, Near Yatra Parchi Counter</option><option data-group_id="19850" data-hotel_id="6403">Clarks Premier, Kota</option><option data-group_id="21096" data-hotel_id="8461">KVR Clarks Inn Kufri, Shimla</option><option data-group_id="19870" data-hotel_id="6238">Triguna Clarks Inn, Kurnool</option><option data-group_id="19830" data-hotel_id="6232">Divine Clarks Inn Suites, Near Bramha Saro</option><option data-group_id="19844" data-hotel_id="6389">Deep Clarks Inn, Near Gomti Nagar</option><option data-group_id="19844" data-hotel_id="6356">Sapna Clarks Inn, Near Hazaratganj</option><option data-group_id="20189" data-hotel_id="7013">Clarks Inn Express, Ludhiana</option><option data-group_id="20591" data-hotel_id="7680">Clarks Inn Suites, Manali</option><option data-group_id="20922" data-hotel_id="8165">SPT Clarks Inn Suites, Mandi</option><option data-group_id="19871" data-hotel_id="6354">MB Greens Clarks Inn, Near Prem Wonderland</option><option data-group_id="19845" data-hotel_id="6357">Starz Clarks Inn, Near Mussoorie Mall Road</option><option data-group_id="19851" data-hotel_id="6380">Emerald Clarks Inn Suites, Near Mysore Palace</option><option data-group_id="19851" data-hotel_id="7592">Clarks Inn Express, KRS Road, Mysore</option><option data-group_id="19852" data-hotel_id="6404">Jay Clarks Exotica, Nahan</option><option data-group_id="19832" data-hotel_id="6231">Clarks Residences, Nainital</option><option data-group_id="21465" data-hotel_id="9089">aôtel by clarks inn, Palampur</option><option data-group_id="19829" data-hotel_id="6226">ANA Clarks Inn, Near Amravati Enclave</option><option data-group_id="19854" data-hotel_id="6405">Vijayatej Clarks Inn, Patna</option><option data-group_id="19853" data-hotel_id="6237">Tarawade Clarks Inn, Shivajinagar</option><option data-group_id="19960" data-hotel_id="6363">Clarks Safari, Pushkar</option><option data-group_id="20939" data-hotel_id="8221">Clarks Exotica Island House, Port Blair</option><option data-group_id="19872" data-hotel_id="6355">OM Clarks Inn, Raebareli</option><option data-group_id="19873" data-hotel_id="6230">Clarks Inn Suites, Near Raipur Airport</option><option data-group_id="19874" data-hotel_id="6457">Clarks Exotica Nature Resort, Near Apple Jam Factory</option><option data-group_id="19875" data-hotel_id="6373">Clarks Exotica Resort, Near Mukhteshwar</option><option data-group_id="19961" data-hotel_id="7309">Clarks Inn Suites, Ranthambore</option><option data-group_id="19961" data-hotel_id="6450">Clarks Safari, Ranthambore</option><option data-group_id="20940" data-hotel_id="8219">Clarks Inn Express, Rishikesh</option><option data-group_id="20241" data-hotel_id="7127">Clarks Inn Express, Sirkazhi</option><option data-group_id="19876" data-hotel_id="6500">Ashiana Clarks Inn, Near Shimla Mall Road</option><option data-group_id="19877" data-hotel_id="6351">Green View Clarks Inn, Near Elephant Camps &amp; Jog Falls</option><option data-group_id="21028" data-hotel_id="8388">Clarks Collection, Somnath</option><option data-group_id="19998" data-hotel_id="6713">Clarks Inn, Near Lal Chaulk</option><option data-group_id="20372" data-hotel_id="7363">Albatross Villas &amp; Suites by The Clarks, Kandy Sri Lanka</option><option data-group_id="20372" data-hotel_id="8385">Celestial Hills - Villas &amp; Suites by The Clarks, Kandy</option><option data-group_id="20004" data-hotel_id="6365">Clarks Collection, Vadodara</option><option data-group_id="20029" data-hotel_id="6800">Anandam Clarks Inn Suites, Vrindavan</option><option data-group_id="20697" data-hotel_id="6358">Velvet Clarks Exotica, Zirakpur</option><option data-group_id="20192" data-hotel_id="7014">Clarks Exotica, Kamadhoo Maldives</option></select></div>
+                            <div><select class="form-control" id="booking-engine-hotels-clone">
+                                <option data-group_id="19858" data-hotel_id="6349">Bhawna Clarks Inn, Near Taj Mahal</option>
+                                <option data-group_id="19858" data-hotel_id="6825">Neel Clarks Inn Express, Near Taj Mahal</option>
+                                </select>
+                            </div>
                         </div>
 
 
@@ -156,13 +193,13 @@
                                     <div class="text-content-wrapper">
                                         <p></p>
                                         <h2>Explore The Unexplored!</h2>
-                                        <p>Enjoy the thrill of spotting rare birds during the day time. Unwind with a book by the warm fireplace indoors, or step outside and gather around a bonfire under a vibrant night sky for a truly quintessential Kumaon experience. Embark on exhilarating hikes along nearby nature trails to immerse yourself in the surrounding wilderness. Located just 22 kilometers from bustling Nainital, Bhimtal invites you to a peaceful getaway destination.</p>
+                                        <p>Enjoy the thrill of spotting rare birds during the day time. Unwind with a book by the warm fireplace indoors, or step outside and gather around a bonfire under a vibrant night sky for a truly quintessential Kumaon experience. Embark on exhilarating hikes along nearby nature trails to immerse yourself in the surrounding wilderness.</p>
                                         <p></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider nonFullWidthWidget simp-custom-home-explore-slider" data-widget-id="2292649" style=" ">
-                                {% for property in properties  %} 
+                                <!-- {% for property in properties  %} 
                                 <div class="col-xs-12 one-col text-content"><img alt="Clarks Exotica Rajgarh" class="img-responsive image-content-29" loading="lazy" src="{{property.image.url}}"
                                         style="aspect-ratio: 1127/634; " />
                                     <div class="text-content-wrapper">
@@ -171,7 +208,35 @@
                                         <p></p>
                                     </div>
                                 </div>
-                                {% endfor %}
+                                {% endfor %} -->
+                                
+
+                                {% if properties %}
+                                <div class="col-xs-12 one-col text-content"><img alt="Clarks Exotica Rajgarh" class="img-responsive image-content-29" loading="lazy" src="{{properties.0.image.url}}"
+                                        style="aspect-ratio: 1127/634; " />
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <p><a class="internal-link" data-page-id="816725" href="./clarks-exotica-nature-resort-rajgarh/" target="_self">#internal_link__816725</a></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 one-col text-content"><img alt="SPT Clarks Inn Suites Mandi" class="img-responsive image-content-29" loading="lazy" src="{{properties.1.image.url}}"
+                                        style="aspect-ratio: 1127/634; " />
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <p><a class="internal-link" data-page-id="846213" href="./clarks-inn-suites-mandi/" target="_self">#internal_link__846213</a></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 one-col text-content"><img alt="Clarks Exotica Ramgarh" class="img-responsive image-content-29" loading="lazy" src="{{properties.2.image.url}}"
+                                        style="aspect-ratio: 1127/634; " />
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <p><a class="internal-link" data-page-id="815596" href="./clarks-exotica-resort-ramgarh/" target="_self">#internal_link__815596</a></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                {% endif %}
                                
                             </div>
 
@@ -215,8 +280,8 @@
                             <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider fullWidthWidget simp-custom-media simp-custom-explore-changes" data-widget-id="2299922" style=" ">
                                 <div class="fullWidthWidgetWrapper clearfix">
 
-                                    {% for property in properties %}         
-                                    <div class="col-xs-12 one-col text-content"><img alt="Explore-02" class="img-responsive Image-content-29" loading="lazy" src="{{property.image.url}}"
+                                    <!-- {% for property in properties %}         
+                                    <div class="col-xs-12 one-col text-content"><img alt="Explore-02" class="img-responsive image-content-29" loading="lazy" src="{{property.image.url}}"
                                             style="aspect-ratio: 4500/4500;"/>
                                         <div class="text-content-wrapper">
                                             <p></p>
@@ -224,7 +289,10 @@
                                             <p></p>
                                         </div>
                                     </div>
-                                    {% endfor %}
+                                    {% endfor %} -->
+                                    
+
+
                                 </div>
                             </div>
 
@@ -567,22 +635,3 @@
 </body>
 
 </html>
-
-
-
-<!-- <script>
-    document.getElementById('booking-form').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-        const location = document.getElementById('booking-engine-groups').value;
-        const hotel = document.getElementById('booking-engine-hotels').value;
-        const checkIn = document.querySelector('.arrival-date-input').value;
-        const checkOut = document.querySelector('.departure-date-input').value;
-
-        const message = `Booking Details:\nLocation: ${location}\nHotel: ${hotel}\nCheck In: ${checkIn}\nCheck Out: ${checkOut}`;
-        
-        const whatsappNumber = '916205440296';
-        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-        
-        window.open(whatsappLink, '_blank');
-    });
-</script> -->
