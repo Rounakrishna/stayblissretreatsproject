@@ -19,11 +19,24 @@ def CONTACT(requests):
 
 
 def GALLERY(requests):
-    return render(requests,'gallery.html')
+    allphoto = models.gallery.objects.all()
+    data = {
+        'allphoto':allphoto
+
+    }
+    return render(requests,'gallery.html',data)
 
 
 def ABOUT(requests):
-    return render(requests,'about.html')
+    properties = models.exploreproperties.objects.all()
+    allphoto = models.aboutphoto.objects.all()
+ 
+    data = {
+        'properties':properties,
+        'allphoto':allphoto,
+    }
+
+    return render(requests,'about.html',data)
 
 
 def PACKAGES(requests):

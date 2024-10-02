@@ -4686,7 +4686,7 @@ body.mobile {
     font-size: clamp(24px, 1.875vw, 36px);
     line-height: clamp(32px, 3.86vw, 58px);
     letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.80);
+    color: rgb(150 205 41);
     font-weight: 700;
     text-transform: unset;
     font-family: Montserrat, sans-serif;

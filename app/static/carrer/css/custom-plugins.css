@@ -5061,7 +5061,7 @@ body.mobile {
     line-height: clamp(40px, 4.2vw, 64px);
     letter-spacing: 1px;
     /*color: #fff ;*/
-    color: rgba(0, 0, 0, 0.80);
+    color: rgb(150 205 41);
     font-weight: 700;
 }
 
@@ -5071,7 +5071,7 @@ body.mobile {
     font-size: clamp(24px, 1.875vw, 36px);
     line-height: clamp(32px, 3.86vw, 58px);
     letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.80);
+    color: rgb(150 205 41);
     font-weight: 700;
 }
 
@@ -5081,7 +5081,7 @@ body.mobile {
     font-size: clamp(12px, 1.2vw, 18px);
     line-height: clamp(18px, 2.13vw, 32px);
     letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.85);
+    color: rgb(150 205 41);
     font-weight: 300;
 }
 
@@ -5091,7 +5091,7 @@ body.mobile {
     font-size: clamp(20px, 2.93vw, 44px);
     line-height: clamp(28px, 3.86vw, 58px);
     letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.80);
+    color: rgb(150 205 41);
     font-weight: 500;
 }
 
@@ -5121,7 +5121,7 @@ body.mobile {
     font-size: clamp(15px, 0.937vw, 18px);
     line-height: clamp(18px, 2.13vw, 32px);
     letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.85);
+    color: rgb(109, 149, 29);
     font-weight: 400;
 }
 

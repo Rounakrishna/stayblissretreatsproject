@@ -46,13 +46,12 @@ class unexplore(models.Model):
 
 
 class gallery(models.Model):
-    name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='gallery')
-    location = models.CharField(max_length=100)
 
-    def __str__(self):
-        return self.name
+class aboutphoto(models.Model):
+    image = models.ImageField(upload_to='about')
 
+ 
 
 
 class package(models.Model):
