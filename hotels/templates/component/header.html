@@ -4,7 +4,7 @@
       <div class="container">
         <div class="lang-book-wrapper">
           <div class="resv-wrap">
-            <button class="resv resv_button book_button" href="littleheartresort.com" data-toggle="modal"> Book Now</button>
+            {% comment %} <button class="resv resv_button book_button" href="littleheartresort.com" data-toggle="modal"> Book Now</button> {% endcomment %}
             <div class="modal fade" id="resv-form" role="dialog" tabindex="-1">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -14,9 +14,7 @@
                         <span aria-hidden="true" >
                             <svg data-name="Layer 1" id="Layer_1" viewbox="0 0 46.09 45.63" xmlns="http://www.w3.org/2000/svg">
                             <defs><style>
-                                .cls-1 {
-                                  fill: #a8a7a8;
-                                }
+                                .cls-1 {fill: #a8a7a8;}
                               </style></defs>
                             <title>Close</title>
                             <rect class="cls-1" height="0.77" transform="translate(256.16 715.69) rotate(-134.72)" width="32.07" x="655.97" y="321.5"></rect>
@@ -59,32 +57,31 @@
                     </li>
                     <li class="">
                         <div class="dropdown-header">
-                            <h4 class="locName"><a href="#" style="text-decoration: none;">Daffodil Cottage - Manali</a></h4>
+                            <h4 class="locName"><a href="{% url 'daffodilcottage' %}" style="text-decoration: none;">Daffodil Cottage - Manali</a></h4>
                         </div>
                     </li>
                     <li class="">
                         <div class="dropdown-header">
-                            <h4 class="locName"><a href="#" style="text-decoration: none;">Hotel Classic Hills - Dharamshala</a></h4>
+                            <h4 class="locName"><a href="{% url 'hotelclassichills' %}" style="text-decoration: none;">Hotel Classic Hills - Dharamshala</a></h4>
                         </div>
                     </li>
                     <li class="">
                         <div class="dropdown-header">
-                            <h4 class="locName"><a href="#" style="text-decoration: none;">Stay Bliss Villa - Bhimtal(Nainital)</a></h4>
+                            <h4 class="locName"><a href="{% url 'stayblissvilla' %}" style="text-decoration: none;">Stay Bliss Villa - Bhimtal(Nainital)</a></h4>
                         </div>
                     </li>
                     <li class="">
                         <div class="dropdown-header">
-                            <h4 class="locName"><a href="#" style="text-decoration: none;">Ayodhya Stay Hotel - Ayodhya</a></h4>
+                            <h4 class="locName"><a href="{% url 'ayodhyastayhotel' %}" style="text-decoration: none;">Ayodhya Stay Hotel - Ayodhya</a></h4>
                         </div>
                     </li>
                 </ul>
             </li>
-
             <li class="primary"><a class="" href="{% url 'base' %}">Home</a></li>
             <li class="primary"><a class="" href="{% url 'about' %}">About us</a></li>
             <li class="primary"><a class="" href="{% url 'packages' %}">Packages</a></li>
             <li class="primary"><a class="" href="{% url 'gallery' %}">Gallery</a></li>
-            <li class="primary"><a class="" href="{% url 'carrier' %}">Career</a></li>
+            <li class="primary"><a class="" href="{% url 'carrier' %}">Carrier</a></li>
             <li class="primary"><a class="" href="{% url 'testimonial' %}">Testimonial</a></li>
             <li class="primary"><a class="" href="{% url 'contact' %}">Contact Us</a></li>
             <li class="moreOptions">
@@ -115,24 +112,22 @@
               <a class="" href="#">Little Heart Resort</a>
             </li>
             <li class="primary">
-              <a class="" href="./../clarks-inn-suites-manali/rooms.html">About Us</a>
+              <a class="" href="#">About Us</a>
             </li>
             <li class="primary">
-              <a class="" href="./../clarks-inn-suites-manali/gallery.html">Gallery</a>
+              <a class="" href="#">Gallery</a>
             </li>
         
             <li class="primary">
-              <a class="" href="./../clarks-inn-suites-manali/location.html">Location</a>
+              <a class="" href="#">Location</a>
             </li>
             <li class="primary">
-              <a class="" href="./../clarks-inn-suites-manali/contact-us.html" >Contact Us</a>
+              <a class="" href="#" >Contact Us</a>
             </li>
-            <li class="moreOptions">
-              <a href="#"
-                ><i class="fa fa-bars"><span></span></i
-              ></a>
+            {% comment %} <li class="moreOptions">
+              <a href="#"><i class="fa fa-bars"><span></span></i></a>
               <ul class="dropdown-more"></ul>
-            </li>
+            </li> {% endcomment %}
           </ul>
         </div>
       </div>
