@@ -7,7 +7,7 @@ def DAFFODIL_COTTAGE(requests):
     return render(requests,'daffodilcottage.html')
 
 def HOTEL_CLASSIC_CHILLS(requests):
-    return render(requests,'hotelclassicchillshtml')
+    return render(requests,'hotelclassichills.html')
 
 def STAY_BLISS_VILLA(requests):
     return render(requests,'stayblissvilla.html')
