@@ -145,7 +145,7 @@
             ]
         }
     </script>
-    <title>Ayodhya Stay Hotel | Hotel in  - Ayodhya</title>
+    <title>Ayodhya Stay Hotel | Hotel in Ayodhya</title>
     <meta content="Clarks Inn Suites, Manali provides mountain and valley views from all the rooms and enjoys good connectivity with a certain degree of isolation." name="Description" />
     <meta content="Clarks Inn Suites, Manali | Hotel in Manali" property="og:title" />
     <meta content="website" property="og:type" />
@@ -174,8 +174,135 @@
 
 <body class="child-hotel for-homepage explorer_chain" data-hotelid="7680">
     <main class="outer-page">
-      {% include "component/header.html" %}
-      <div class="jssor-carousel-container camera-carousel-container aspectratio16-9 video-banner-container">
+        <header>
+            <nav class="navbar navbar-top">
+            <div class="container">
+                <div class="lang-book-wrapper">
+                <div class="resv-wrap">
+                    {% comment %} <button class="resv resv_button book_button" href="littleheartresort.com" data-toggle="modal"> Book Now</button> {% endcomment %}
+                    <div class="modal fade" id="resv-form" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="booking-form-wrapper">
+                            <button aria-label="Close" class="close" data-dismiss="modal" type="button" >
+                                <span aria-hidden="true">
+                                    <svg data-name="Layer 1" id="Layer_1" viewbox="0 0 46.09 45.63" xmlns="http://www.w3.org/2000/svg">
+                                    <defs><style>.cls-1 {fill: #a8a7a8;}</style></defs>
+                                    <title>Close</title>
+                                    <rect class="cls-1" height="0.77" transform="translate(256.16 715.69) rotate(-134.72)" width="32.07" x="655.97" y="321.5"></rect>
+                                    <rect class="cls-1" height="0.77" transform="translate(730.96 -194.29) rotate(135.28)" width="32.07" x="655.59" y="343.63"></rect>
+                                    <rect class="cls-1" height="0.78" transform="translate(-209.8 -701.29) rotate(45.28)" width="32.26" x="677.79" y="343.69"></rect>
+                                    <rect class="cls-1" height="0.78" transform="translate(-685.44 271.49) rotate(-44.72)" width="32.26" x="678.18" y="321.42"></rect></svg></span>
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                
+                <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#top-menu" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="./">
+                    <img alt="Final logo Black1" loading="lazy" src="../../media/logo_header.png" style="width: 250px; height: 280px"/></a>
+                </div>
+
+
+                <div class="navbar-collapse collapse" id="top-menu" style=" overflow: visible !important; width: 100% !important; padding-right: 0px;">
+                <ul class="nav navbar-nav" id="top-navbar-collapse">
+
+
+
+                    <li class="dropdown primary" id="menuFilterLoc">
+                        <a class="has-submenu" data-toggle="dropdown" href="#">Our Hotels<span class="fa fa-angle-down dropdown-arrow"></span></a>
+                        <p class="menuSearchCardCloseBtn"></p>
+                        <ul class="dropdown-menu mega-menu" id="hotelLocMenuList">
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'littleheartresort' %}" style="text-decoration: none;">Little Heart Resort - Chail(Shimla)</a></h4>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'daffodilcottage' %}" style="text-decoration: none;">Daffodil Cottage - Manali</a></h4>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'hotelclassichills' %}" style="text-decoration: none;">Hotel Classic Hills - Dharamshala</a></h4>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'stayblissvilla' %}" style="text-decoration: none;">Stay Bliss Villa - Bhimtal(Nainital)</a></h4>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'ayodhyastayhotel' %}" style="text-decoration: none;">Ayodhya Stay Hotel - Ayodhya</a></h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="primary"><a class="" href="{% url 'base' %}">Home</a></li>
+                    <li class="primary"><a class="" href="{% url 'about' %}">About us</a></li>
+                    <li class="primary"><a class="" href="{% url 'packages' %}">Packages</a></li>
+                    <li class="primary"><a class="" href="{% url 'gallery' %}">Gallery</a></li>
+                    <li class="primary"><a class="" href="{% url 'carrier' %}">Carrier</a></li>
+                    <li class="primary"><a class="" href="{% url 'testimonial' %}">Testimonial</a></li>
+                    <li class="primary"><a class="" href="{% url 'contact' %}">Contact Us</a></li>
+                    <li class="moreOptions">
+                    <a href="#"><i class="fa fa-bars"><span></span></i></a>
+                    <ul class="dropdown-more"></ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+
+
+
+
+        {% comment %} -----------------------------nav-bottom--------------------------- {% endcomment %}
+            <nav class="navbar navbar-bottom">
+            <div class="container">
+                <div class="navbar-header">
+                <button class="navbar-toggle" data-target="#bottom-navbar-collapse" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>        
+                <div class="navbar-collapse collapse" id="bottom-menu">
+                <ul class="nav navbar-nav" id="bottom-navbar-collapse">
+                    <li class="child-hotel-name primary"><a class="" href="#">Ayodhya Stay Hotel</a></li>
+                    <li class="primary"><a class="" href="#rooms">Rooms</a></li>
+                    <li class="primary"><a class="" href="#gallery">Gallery</a></li>
+                    <li class="primary"><a class="" href="#packages">Packages</a></li>
+                    <li class="primary"><a class="" href="#servies">Servies</a></li>
+                    <li class="primary"><a class="" href="#contact">Contact Us</a></li>
+                    {% comment %} <li class="moreOptions">
+                    <a href="#"><i class="fa fa-bars"><span></span></i></a>
+                    <ul class="dropdown-more"></ul>
+                    </li> {% endcomment %}
+                </ul>
+                </div>
+            </div>
+            </nav>
+
+        </header>
+
+
+
+
+
+        <div class="jssor-carousel-container camera-carousel-container aspectratio16-9 video-banner-container">
         <div id="fullwidth_video_bg">
             <video autoplay="true" id="myVideo" loop="" muted="" playsinline="" poster="../../media/ayodhaya/photo/first.jpeg" preload="none">
             <source src="#" type="video/mp4"/>
@@ -245,7 +372,7 @@
                 </div>
             </div>
         </div> {% endcomment %}
-    </div>
+        </div>
 
 
 

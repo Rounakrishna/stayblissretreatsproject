@@ -174,78 +174,202 @@
 
 <body class="child-hotel for-homepage explorer_chain" data-hotelid="7680">
     <main class="outer-page">
-      {% include "component/header.html" %}
-      <div class="jssor-carousel-container camera-carousel-container aspectratio16-9 video-banner-container">
-        <div id="fullwidth_video_bg">
-            <video autoplay="true" id="myVideo" loop="" muted="" playsinline="" poster="../../media/staybliss/photo/first.jpeg" preload="none">
-            <source src="#" type="video/mp4"/>
-            </video>
-            <div class="row text-center videoControls">
-                <span class="play_pause_video_btn">
-                    <i aria-hidden="true" class="fa fa-play"></i> 
-                    <i aria-hidden="true" class="fa fa-pause"></i>
-                </span> 
-                <span class="mute_video">
-                    <i aria-hidden="true" class="fa fa-volume-up"></i> 
-                    <i aria-hidden="true" class="fa fa-volume-off"></i>
-                </span>
-            </div>
-        </div>
-        {% comment %} <div class="weather-time-widget-holder"></div> {% endcomment %}
-        {% comment %} <div class="bookingform-wrapper">
-            <div class="abs_parent">
-                <div class="sm_booking_form clearfix booking-form booking-form-vc-desktop" id="bookingForm">
-                    <div class="form-group select-block select-location"><label>Location</label>
-                        <div><select class="form-control" id="booking-engine-groups"><option data-group_id="19858">Agra</option><option data-group_id="21591">Ahmedabad</option><option data-group_id="21800">Ajmer</option><option data-group_id="20056">Aligarh</option><option data-group_id="19882">Amritsar</option><option data-group_id="21101">Ambala</option><option data-group_id="21175">Ayodhya</option><option data-group_id="19860">Badami</option><option data-group_id="20206">Baddi</option><option data-group_id="19990">Bangalore</option><option data-group_id="19965">Bagalkot</option><option data-group_id="19861">Bareilly</option><option data-group_id="21724">Bathinda</option><option data-group_id="20213">Bharatpur</option><option data-group_id="20003">Bhavnagar</option><option data-group_id="20935">Bhilwara</option><option data-group_id="19862">Bhopal</option><option data-group_id="19843">Bhuj</option><option data-group_id="20042">Chennai</option><option data-group_id="19864">Dalhousie</option><option data-group_id="20468">Dehradun</option><option data-group_id="20009">Dudhwa</option><option data-group_id="19865">Gadag</option><option data-group_id="20269">Goa</option><option data-group_id="19831">Gurgaon</option><option data-group_id="19866">Gwalior</option><option data-group_id="20575">Hampi</option><option data-group_id="21812">Hyderabad</option><option data-group_id="19867">Jalandhar</option><option data-group_id="19868">Jammu</option><option data-group_id="20470">Jawai</option><option data-group_id="19879">Kangra</option><option data-group_id="19849">Kanpur</option><option data-group_id="19869">Katra</option><option data-group_id="19850">Kota</option><option data-group_id="21096">Kufri</option><option data-group_id="19870">Kurnool</option><option data-group_id="19830">Kurukshetra</option><option data-group_id="19844">Lucknow</option><option data-group_id="20189">Ludhiana</option><option data-group_id="20591" selected="">Manali</option><option data-group_id="20922">Mandi</option><option data-group_id="19871">Moradabad</option><option data-group_id="19845">Mussoorie</option><option data-group_id="19851">Mysore</option><option data-group_id="19852">Nahan</option><option data-group_id="19832">Nainital</option><option data-group_id="21465">Palampur</option><option data-group_id="19829">Panchkula</option><option data-group_id="19854">Patna</option><option data-group_id="19853">Pune</option><option data-group_id="19960">Pushkar</option><option data-group_id="20939">Port Blair</option><option data-group_id="19872">Raebareli</option><option data-group_id="19873">Raipur</option><option data-group_id="19874">Rajgarh</option><option data-group_id="19875">Ramgarh</option><option data-group_id="19961">Ranthambore</option><option data-group_id="20940">Rishikesh</option><option data-group_id="20241">Sirkazhi</option><option data-group_id="19876">Shimla</option><option data-group_id="19877">Shimoga</option><option data-group_id="21028">Somnath</option><option data-group_id="19998">Srinagar</option><option data-group_id="20372">Sri Lanka</option><option data-group_id="20004">Vadodara</option><option data-group_id="20029">Vrindavan</option><option data-group_id="20697">Zirakpur</option><option data-group_id="20192">Maldives</option></select></div>
-                    </div>
-                    <div class="form-group select-block select-hotel"><label>Hotel</label>
-                        <div><select class="form-control" id="booking-engine-hotels"><option data-group_id="20591" data-hotel_id="7680" selected="">Clarks Inn Suites, Manali</option></select></div>
-                    </div>
-                    <div class="form-group hidden select-block select-hotel"><label>Hotel</label>
-                        <div><select class="form-control" id="booking-engine-hotels-clone"><option data-group_id="19858" data-hotel_id="6349">Bhawna Clarks Inn, Near Taj Mahal</option><option data-group_id="19858" data-hotel_id="6825">Neel Clarks Inn Express, Near Taj Mahal</option><option data-group_id="21591" data-hotel_id="9290">Clarks Safari Kheda, Ahmedabad</option><option data-group_id="21800" data-hotel_id="9608">Clarks Resort The Archi's Castle, Ajmer</option><option data-group_id="20056" data-hotel_id="6824">Clarks Inn, Aligarh</option><option data-group_id="19882" data-hotel_id="6610">Bharawan Clarks Inn Express, Near Golden Temple</option><option data-group_id="19882" data-hotel_id="6680">HK Clarks Inn, Near Golden Temple</option><option data-group_id="21101" data-hotel_id="8471">Clarks Inn, Ambala</option><option data-group_id="21175" data-hotel_id="8532">Clarks Inn Express, Ayodhya</option><option data-group_id="19860" data-hotel_id="6227">Clarks Inn, Near Badami Caves</option><option data-group_id="20206" data-hotel_id="7031">Clarks Inn Express, Baddi</option><option data-group_id="19990" data-hotel_id="6714">Clarks Inn, Bangalore Airport</option><option data-group_id="19965" data-hotel_id="6682">Clarks Inn, Behind Bagalkot Railway Station</option><option data-group_id="19861" data-hotel_id="6372">Aakriti Clarks Inn Express, Opposite Satellite Bus Stand</option><option data-group_id="21724" data-hotel_id="9456">Clarks Inn, Bathinda</option><option data-group_id="20213" data-hotel_id="7057">Clarks Inn Express, Bharatpur</option><option data-group_id="20003" data-hotel_id="6364">Clarks Collection, Bhavnagar</option><option data-group_id="20935" data-hotel_id="8238">The Imperial Prime Clarks Inn Suites, Bhilwara</option><option data-group_id="19862" data-hotel_id="6233">Fairyland Clarks Inn, Bhopal</option><option data-group_id="19843" data-hotel_id="6236">Seven Sky Clarks Exotica, Near Bhuj Airport</option><option data-group_id="20042" data-hotel_id="6815">Raaj Bhaavan Clarks Inn Chennai OMR</option><option data-group_id="19864" data-hotel_id="6234">JK Clarks Exotica, Near Dalhousie Mall Road</option><option data-group_id="20468" data-hotel_id="7486">Clarks Inn Express, Dehradun</option><option data-group_id="20009" data-hotel_id="6780">Clarks Inn, Dudhwa</option><option data-group_id="19865" data-hotel_id="6235">Keshav Clarks Inn, Gadag</option><option data-group_id="20269" data-hotel_id="6882">Casa Arya Villa, Candolim</option><option data-group_id="20269" data-hotel_id="7187">Cosmique Clarks Inn Suites, Goa Margao</option><option data-group_id="20269" data-hotel_id="7208">Divan Clarks Inn, Goa Calangute</option><option data-group_id="19831" data-hotel_id="6228">DS Clarks Inn, Near Gurgaon Old Judicial Complex</option><option data-group_id="19866" data-hotel_id="6352">Clarks Inn Suites, Near Gwalior DD Mall</option><option data-group_id="20575" data-hotel_id="7653">Clarks Inn, Hampi</option><option data-group_id="21812" data-hotel_id="9658">Clarks Inn Suites, Hyderabad</option><option data-group_id="19867" data-hotel_id="6401">AB Clarks Inn, Near Jawahar Nagar</option><option data-group_id="19868" data-hotel_id="6350">Clarks Inn Express, Near Jammu Bari Brahmana Railway Station</option><option data-group_id="20470" data-hotel_id="7489">Clarks Safari, Jawai</option><option data-group_id="19879" data-hotel_id="6607">Clarks Inn Suites, Near Kangra Mata Temple</option><option data-group_id="19849" data-hotel_id="6381">Heaven View Clarks Inn, Kanpur</option><option data-group_id="19869" data-hotel_id="6229">Clarks Inn Suites, Near Yatra Parchi Counter</option><option data-group_id="19850" data-hotel_id="6403">Clarks Premier, Kota</option><option data-group_id="21096" data-hotel_id="8461">KVR Clarks Inn Kufri, Shimla</option><option data-group_id="19870" data-hotel_id="6238">Triguna Clarks Inn, Kurnool</option><option data-group_id="19830" data-hotel_id="6232">Divine Clarks Inn Suites, Near Bramha Saro</option><option data-group_id="19844" data-hotel_id="6389">Deep Clarks Inn, Near Gomti Nagar</option><option data-group_id="19844" data-hotel_id="6356">Sapna Clarks Inn, Near Hazaratganj</option><option data-group_id="20189" data-hotel_id="7013">Clarks Inn Express, Ludhiana</option><option data-group_id="20591" data-hotel_id="7680">Clarks Inn Suites, Manali</option><option data-group_id="20922" data-hotel_id="8165">SPT Clarks Inn Suites, Mandi</option><option data-group_id="19871" data-hotel_id="6354">MB Greens Clarks Inn, Near Prem Wonderland</option><option data-group_id="19845" data-hotel_id="6357">Starz Clarks Inn, Near Mussoorie Mall Road</option><option data-group_id="19851" data-hotel_id="6380">Emerald Clarks Inn Suites, Near Mysore Palace</option><option data-group_id="19851" data-hotel_id="7592">Clarks Inn Express, KRS Road, Mysore</option><option data-group_id="19852" data-hotel_id="6404">Jay Clarks Exotica, Nahan</option><option data-group_id="19832" data-hotel_id="6231">Clarks Residences, Nainital</option><option data-group_id="21465" data-hotel_id="9089">aôtel by clarks inn, Palampur</option><option data-group_id="19829" data-hotel_id="6226">ANA Clarks Inn, Near Amravati Enclave</option><option data-group_id="19854" data-hotel_id="6405">Vijayatej Clarks Inn, Patna</option><option data-group_id="19853" data-hotel_id="6237">Tarawade Clarks Inn, Shivajinagar</option><option data-group_id="19960" data-hotel_id="6363">Clarks Safari, Pushkar</option><option data-group_id="20939" data-hotel_id="8221">Clarks Exotica Island House, Port Blair</option><option data-group_id="19872" data-hotel_id="6355">OM Clarks Inn, Raebareli</option><option data-group_id="19873" data-hotel_id="6230">Clarks Inn Suites, Near Raipur Airport</option><option data-group_id="19874" data-hotel_id="6457">Clarks Exotica Nature Resort, Near Apple Jam Factory</option><option data-group_id="19875" data-hotel_id="6373">Clarks Exotica Resort, Near Mukhteshwar</option><option data-group_id="19961" data-hotel_id="7309">Clarks Inn Suites, Ranthambore</option><option data-group_id="19961" data-hotel_id="6450">Clarks Safari, Ranthambore</option><option data-group_id="20940" data-hotel_id="8219">Clarks Inn Express, Rishikesh</option><option data-group_id="20241" data-hotel_id="7127">Clarks Inn Express, Sirkazhi</option><option data-group_id="19876" data-hotel_id="6500">Ashiana Clarks Inn, Near Shimla Mall Road</option><option data-group_id="19877" data-hotel_id="6351">Green View Clarks Inn, Near Elephant Camps &amp; Jog Falls</option><option data-group_id="21028" data-hotel_id="8388">Clarks Collection, Somnath</option><option data-group_id="19998" data-hotel_id="6713">Clarks Inn, Near Lal Chaulk</option><option data-group_id="20372" data-hotel_id="7363">Albatross Villas &amp; Suites by The Clarks, Kandy Sri Lanka</option><option data-group_id="20372" data-hotel_id="9498">Beacon by the Bay Villas &amp; Suites by The Clarks, Dondra</option><option data-group_id="20372" data-hotel_id="8385">Celestial Hills - Villas &amp; Suites by The Clarks, Kandy</option><option data-group_id="20004" data-hotel_id="6365">Clarks Collection, Vadodara</option><option data-group_id="20029" data-hotel_id="6800">Anandam Clarks Inn Suites, Vrindavan</option><option data-group_id="20697" data-hotel_id="6358">Velvet Clarks Exotica, Zirakpur</option><option data-group_id="20192" data-hotel_id="7014">Clarks Exotica, Kamadhoo Maldives</option></select></div>
-                    </div>
-                    <div class="whyBookDirect" style=""><a class="active">Why Book Direct?</a>
-                        <div class="wrapperOfBenefits">
-                            <ul class="benefitList">
-                                <li class="listItem"><i class="far fas fa-asterisk"></i>Lowest Price Guaranteed</li>
-                                <li class="listItem"><i class="far far fa-asterisk"></i>Get Exclusive Inclusions</li>
-                                <li class="listItem"><i class="far far fa-asterisk"></i>Easy amendments / cancellation</li>
-                                <li class="listItem"><i class="far far fa-asterisk"></i>Complete Tranquility (Book directly, No intermediary)</li>
-                                <li class="listItem"><i class="far far fa-asterisk"></i>Website Booking Benefits</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <form action="https://bookings.theclarkshotels.com" class="sm_booking_form booking-form booking-button" data-engine="simplotel" data-group_id="20591" data-hotel_id="7680" id="booking-form" method="GET" target="_self"><input id="chain_id" name="chainId" type="hidden" value="6225" /><input id="property_id" name="propertyId" type="hidden" value="7680" /><input id="check_in" name="checkIn" type="hidden" /><input id="check_out" name="checkOut" type="hidden"
-                        />
-                        <div class="form-group date-parameter-block tohide"><label>Check In</label>
-                            <div class="dp-holder"><input class="arrival-date-input form-control" id="" name="" type="text" /><span class="fa fa-calendar"></span></div>
-                        </div>
-                        <div class="form-group date-parameter-block tohide"><label>Check Out</label>
-                            <div class="dp-holder"><input class="departure-date-input form-control" id="" name="" type="text" /><span class="fa fa-calendar"></span></div>
-                        </div>
-                        <div class="adult-wrapper">
-                            <div class="form-group adult-block tohide"><label for="adults">Adults</label>
-                                <div><select class="form-control" data-meta="2" id="adults_id" name="adults"><option value="1">1</option><option selected="" value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>
+        <header>
+            <nav class="navbar navbar-top">
+              <div class="container">
+                <div class="lang-book-wrapper">
+                  <div class="resv-wrap">
+                    {% comment %} <button class="resv resv_button book_button" href="littleheartresort.com" data-toggle="modal"> Book Now</button> {% endcomment %}
+                    <div class="modal fade" id="resv-form" role="dialog" tabindex="-1">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="booking-form-wrapper">
+                              <button aria-label="Close" class="close" data-dismiss="modal" type="button" >
+                                <span aria-hidden="true">
+                                    <svg data-name="Layer 1" id="Layer_1" viewbox="0 0 46.09 45.63" xmlns="http://www.w3.org/2000/svg">
+                                    <defs><style>.cls-1 {fill: #a8a7a8;}</style></defs>
+                                    <title>Close</title>
+                                    <rect class="cls-1" height="0.77" transform="translate(256.16 715.69) rotate(-134.72)" width="32.07" x="655.97" y="321.5"></rect>
+                                    <rect class="cls-1" height="0.77" transform="translate(730.96 -194.29) rotate(135.28)" width="32.07" x="655.59" y="343.63"></rect>
+                                    <rect class="cls-1" height="0.78" transform="translate(-209.8 -701.29) rotate(45.28)" width="32.26" x="677.79" y="343.69"></rect>
+                                    <rect class="cls-1" height="0.78" transform="translate(-685.44 271.49) rotate(-44.72)" width="32.26" x="678.18" y="321.42"></rect></svg></span>
+                              </button>
                             </div>
+                          </div>
                         </div>
-                        <div class="child-wrapper">
-                            <div class="form-group child-block tohide" data-placement="bottom" data-toggle="tooltip" title="Age : 5-12 Years"><label for="children">Children</label>
-                                <div><select class="form-control" data-meta="0" id="children_id" name="children"><option selected="" value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
-                            </div>
-                        </div>
-                        <div class="form-group promo-block text-field tohide"><label for="promocode">Promo Code</label>
-                            <div class="tb-holder"><input class="form-control" data-meta="current_hotel.showPromocode" id="promo_code" name="promocode" type="text" value="" /></div>
-                        </div>
-                        <div class="form-group min-price-wrapper"><input class="min-room-price" data-meta="" type="hidden" value="" /></div>
-                        <div class="btn-wrapper">
-                            <div class="form-group check-btn-holder"><input class="btn btn-full-width" data-meta="" id="" name="" type="submit" value="Book Now" /></div>
-                        </div><input class="common" data-checkindate="Today" data-checkindateselected="" data-childmaxage="12" data-childminage="5" data-lengthofstay="1" data-lengthofstayselected="" data-propertytype="chain" data-resbtnname="Book Now" type="hidden"
-                        /></form>
-                    <div class="open-form-block vc_open-form-block booking-button"><a class="open-booking-form" href="#"><span class="link-text">More Options</span> <i class="fa fa-lg fa-plus-circle link-icon"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                
+                <div class="navbar-header">
+                  <button class="navbar-toggle collapsed" data-target="#top-menu" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="./">
+                    <img alt="Final logo Black1" loading="lazy" src="../../media/logo_header.png" style="width: 250px; height: 280px"/></a>
+                </div>
+        
+        
+                <div class="navbar-collapse collapse" id="top-menu" style=" overflow: visible !important; width: 100% !important; padding-right: 0px;">
+                  <ul class="nav navbar-nav" id="top-navbar-collapse">
+        
+        
+        
+                    <li class="dropdown primary" id="menuFilterLoc">
+                        <a class="has-submenu" data-toggle="dropdown" href="#">Our Hotels<span class="fa fa-angle-down dropdown-arrow"></span></a>
+                        <p class="menuSearchCardCloseBtn"></p>
+                        <ul class="dropdown-menu mega-menu" id="hotelLocMenuList">
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'littleheartresort' %}" style="text-decoration: none;">Little Heart Resort - Chail(Shimla)</a></h4>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'daffodilcottage' %}" style="text-decoration: none;">Daffodil Cottage - Manali</a></h4>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'hotelclassichills' %}" style="text-decoration: none;">Hotel Classic Hills - Dharamshala</a></h4>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'stayblissvilla' %}" style="text-decoration: none;">Stay Bliss Villa - Bhimtal(Nainital)</a></h4>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="dropdown-header">
+                                    <h4 class="locName"><a href="{% url 'ayodhyastayhotel' %}" style="text-decoration: none;">Ayodhya Stay Hotel - Ayodhya</a></h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="primary"><a class="" href="{% url 'base' %}">Home</a></li>
+                    <li class="primary"><a class="" href="{% url 'about' %}">About us</a></li>
+                    <li class="primary"><a class="" href="{% url 'packages' %}">Packages</a></li>
+                    <li class="primary"><a class="" href="{% url 'gallery' %}">Gallery</a></li>
+                    <li class="primary"><a class="" href="{% url 'carrier' %}">Carrier</a></li>
+                    <li class="primary"><a class="" href="{% url 'testimonial' %}">Testimonial</a></li>
+                    <li class="primary"><a class="" href="{% url 'contact' %}">Contact Us</a></li>
+                    <li class="moreOptions">
+                      <a href="#"><i class="fa fa-bars"><span></span></i></a>
+                      <ul class="dropdown-more"></ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        
+        
+        
+        
+           {% comment %} -----------------------------nav-bottom--------------------------- {% endcomment %}
+            <nav class="navbar navbar-bottom">
+              <div class="container">
+                <div class="navbar-header">
+                  <button class="navbar-toggle" data-target="#bottom-navbar-collapse" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>        
+                <div class="navbar-collapse collapse" id="bottom-menu">
+                  <ul class="nav navbar-nav" id="bottom-navbar-collapse">
+                    <li class="child-hotel-name primary"><a class="" href="#">Stay Bliss Villa</a></li>
+                    <li class="primary"><a class="" href="#rooms">Rooms</a></li>
+                    <li class="primary"><a class="" href="#gallery">Gallery</a></li>
+                    <li class="primary"><a class="" href="#packages">Packages</a></li>
+                    <li class="primary"><a class="" href="#servies">Servies</a></li>
+                    <li class="primary"><a class="" href="#contact">Contact Us</a></li>
+                    {% comment %} <li class="moreOptions">
+                      <a href="#"><i class="fa fa-bars"><span></span></i></a>
+                      <ul class="dropdown-more"></ul>
+                    </li> {% endcomment %}
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        
+        </header>
+        
+        
+        <div class="jssor-carousel-container camera-carousel-container aspectratio16-9 video-banner-container">
+            <div id="fullwidth_video_bg">
+                <video autoplay="true" id="myVideo" loop="" muted="" playsinline="" poster="../../media/staybliss/photo/first.jpeg" preload="none">
+                <source src="#" type="video/mp4"/>
+                </video>
+                <div class="row text-center videoControls">
+                    <span class="play_pause_video_btn">
+                        <i aria-hidden="true" class="fa fa-play"></i> 
+                        <i aria-hidden="true" class="fa fa-pause"></i>
+                    </span> 
+                    <span class="mute_video">
+                        <i aria-hidden="true" class="fa fa-volume-up"></i> 
+                        <i aria-hidden="true" class="fa fa-volume-off"></i>
+                    </span>
                 </div>
             </div>
-        </div> {% endcomment %}
-    </div>
+            {% comment %} <div class="weather-time-widget-holder"></div> {% endcomment %}
+            {% comment %} <div class="bookingform-wrapper">
+                <div class="abs_parent">
+                    <div class="sm_booking_form clearfix booking-form booking-form-vc-desktop" id="bookingForm">
+                        <div class="form-group select-block select-location"><label>Location</label>
+                            <div><select class="form-control" id="booking-engine-groups"><option data-group_id="19858">Agra</option><option data-group_id="21591">Ahmedabad</option><option data-group_id="21800">Ajmer</option><option data-group_id="20056">Aligarh</option><option data-group_id="19882">Amritsar</option><option data-group_id="21101">Ambala</option><option data-group_id="21175">Ayodhya</option><option data-group_id="19860">Badami</option><option data-group_id="20206">Baddi</option><option data-group_id="19990">Bangalore</option><option data-group_id="19965">Bagalkot</option><option data-group_id="19861">Bareilly</option><option data-group_id="21724">Bathinda</option><option data-group_id="20213">Bharatpur</option><option data-group_id="20003">Bhavnagar</option><option data-group_id="20935">Bhilwara</option><option data-group_id="19862">Bhopal</option><option data-group_id="19843">Bhuj</option><option data-group_id="20042">Chennai</option><option data-group_id="19864">Dalhousie</option><option data-group_id="20468">Dehradun</option><option data-group_id="20009">Dudhwa</option><option data-group_id="19865">Gadag</option><option data-group_id="20269">Goa</option><option data-group_id="19831">Gurgaon</option><option data-group_id="19866">Gwalior</option><option data-group_id="20575">Hampi</option><option data-group_id="21812">Hyderabad</option><option data-group_id="19867">Jalandhar</option><option data-group_id="19868">Jammu</option><option data-group_id="20470">Jawai</option><option data-group_id="19879">Kangra</option><option data-group_id="19849">Kanpur</option><option data-group_id="19869">Katra</option><option data-group_id="19850">Kota</option><option data-group_id="21096">Kufri</option><option data-group_id="19870">Kurnool</option><option data-group_id="19830">Kurukshetra</option><option data-group_id="19844">Lucknow</option><option data-group_id="20189">Ludhiana</option><option data-group_id="20591" selected="">Manali</option><option data-group_id="20922">Mandi</option><option data-group_id="19871">Moradabad</option><option data-group_id="19845">Mussoorie</option><option data-group_id="19851">Mysore</option><option data-group_id="19852">Nahan</option><option data-group_id="19832">Nainital</option><option data-group_id="21465">Palampur</option><option data-group_id="19829">Panchkula</option><option data-group_id="19854">Patna</option><option data-group_id="19853">Pune</option><option data-group_id="19960">Pushkar</option><option data-group_id="20939">Port Blair</option><option data-group_id="19872">Raebareli</option><option data-group_id="19873">Raipur</option><option data-group_id="19874">Rajgarh</option><option data-group_id="19875">Ramgarh</option><option data-group_id="19961">Ranthambore</option><option data-group_id="20940">Rishikesh</option><option data-group_id="20241">Sirkazhi</option><option data-group_id="19876">Shimla</option><option data-group_id="19877">Shimoga</option><option data-group_id="21028">Somnath</option><option data-group_id="19998">Srinagar</option><option data-group_id="20372">Sri Lanka</option><option data-group_id="20004">Vadodara</option><option data-group_id="20029">Vrindavan</option><option data-group_id="20697">Zirakpur</option><option data-group_id="20192">Maldives</option></select></div>
+                        </div>
+                        <div class="form-group select-block select-hotel"><label>Hotel</label>
+                            <div><select class="form-control" id="booking-engine-hotels"><option data-group_id="20591" data-hotel_id="7680" selected="">Clarks Inn Suites, Manali</option></select></div>
+                        </div>
+                        <div class="form-group hidden select-block select-hotel"><label>Hotel</label>
+                            <div><select class="form-control" id="booking-engine-hotels-clone"><option data-group_id="19858" data-hotel_id="6349">Bhawna Clarks Inn, Near Taj Mahal</option><option data-group_id="19858" data-hotel_id="6825">Neel Clarks Inn Express, Near Taj Mahal</option><option data-group_id="21591" data-hotel_id="9290">Clarks Safari Kheda, Ahmedabad</option><option data-group_id="21800" data-hotel_id="9608">Clarks Resort The Archi's Castle, Ajmer</option><option data-group_id="20056" data-hotel_id="6824">Clarks Inn, Aligarh</option><option data-group_id="19882" data-hotel_id="6610">Bharawan Clarks Inn Express, Near Golden Temple</option><option data-group_id="19882" data-hotel_id="6680">HK Clarks Inn, Near Golden Temple</option><option data-group_id="21101" data-hotel_id="8471">Clarks Inn, Ambala</option><option data-group_id="21175" data-hotel_id="8532">Clarks Inn Express, Ayodhya</option><option data-group_id="19860" data-hotel_id="6227">Clarks Inn, Near Badami Caves</option><option data-group_id="20206" data-hotel_id="7031">Clarks Inn Express, Baddi</option><option data-group_id="19990" data-hotel_id="6714">Clarks Inn, Bangalore Airport</option><option data-group_id="19965" data-hotel_id="6682">Clarks Inn, Behind Bagalkot Railway Station</option><option data-group_id="19861" data-hotel_id="6372">Aakriti Clarks Inn Express, Opposite Satellite Bus Stand</option><option data-group_id="21724" data-hotel_id="9456">Clarks Inn, Bathinda</option><option data-group_id="20213" data-hotel_id="7057">Clarks Inn Express, Bharatpur</option><option data-group_id="20003" data-hotel_id="6364">Clarks Collection, Bhavnagar</option><option data-group_id="20935" data-hotel_id="8238">The Imperial Prime Clarks Inn Suites, Bhilwara</option><option data-group_id="19862" data-hotel_id="6233">Fairyland Clarks Inn, Bhopal</option><option data-group_id="19843" data-hotel_id="6236">Seven Sky Clarks Exotica, Near Bhuj Airport</option><option data-group_id="20042" data-hotel_id="6815">Raaj Bhaavan Clarks Inn Chennai OMR</option><option data-group_id="19864" data-hotel_id="6234">JK Clarks Exotica, Near Dalhousie Mall Road</option><option data-group_id="20468" data-hotel_id="7486">Clarks Inn Express, Dehradun</option><option data-group_id="20009" data-hotel_id="6780">Clarks Inn, Dudhwa</option><option data-group_id="19865" data-hotel_id="6235">Keshav Clarks Inn, Gadag</option><option data-group_id="20269" data-hotel_id="6882">Casa Arya Villa, Candolim</option><option data-group_id="20269" data-hotel_id="7187">Cosmique Clarks Inn Suites, Goa Margao</option><option data-group_id="20269" data-hotel_id="7208">Divan Clarks Inn, Goa Calangute</option><option data-group_id="19831" data-hotel_id="6228">DS Clarks Inn, Near Gurgaon Old Judicial Complex</option><option data-group_id="19866" data-hotel_id="6352">Clarks Inn Suites, Near Gwalior DD Mall</option><option data-group_id="20575" data-hotel_id="7653">Clarks Inn, Hampi</option><option data-group_id="21812" data-hotel_id="9658">Clarks Inn Suites, Hyderabad</option><option data-group_id="19867" data-hotel_id="6401">AB Clarks Inn, Near Jawahar Nagar</option><option data-group_id="19868" data-hotel_id="6350">Clarks Inn Express, Near Jammu Bari Brahmana Railway Station</option><option data-group_id="20470" data-hotel_id="7489">Clarks Safari, Jawai</option><option data-group_id="19879" data-hotel_id="6607">Clarks Inn Suites, Near Kangra Mata Temple</option><option data-group_id="19849" data-hotel_id="6381">Heaven View Clarks Inn, Kanpur</option><option data-group_id="19869" data-hotel_id="6229">Clarks Inn Suites, Near Yatra Parchi Counter</option><option data-group_id="19850" data-hotel_id="6403">Clarks Premier, Kota</option><option data-group_id="21096" data-hotel_id="8461">KVR Clarks Inn Kufri, Shimla</option><option data-group_id="19870" data-hotel_id="6238">Triguna Clarks Inn, Kurnool</option><option data-group_id="19830" data-hotel_id="6232">Divine Clarks Inn Suites, Near Bramha Saro</option><option data-group_id="19844" data-hotel_id="6389">Deep Clarks Inn, Near Gomti Nagar</option><option data-group_id="19844" data-hotel_id="6356">Sapna Clarks Inn, Near Hazaratganj</option><option data-group_id="20189" data-hotel_id="7013">Clarks Inn Express, Ludhiana</option><option data-group_id="20591" data-hotel_id="7680">Clarks Inn Suites, Manali</option><option data-group_id="20922" data-hotel_id="8165">SPT Clarks Inn Suites, Mandi</option><option data-group_id="19871" data-hotel_id="6354">MB Greens Clarks Inn, Near Prem Wonderland</option><option data-group_id="19845" data-hotel_id="6357">Starz Clarks Inn, Near Mussoorie Mall Road</option><option data-group_id="19851" data-hotel_id="6380">Emerald Clarks Inn Suites, Near Mysore Palace</option><option data-group_id="19851" data-hotel_id="7592">Clarks Inn Express, KRS Road, Mysore</option><option data-group_id="19852" data-hotel_id="6404">Jay Clarks Exotica, Nahan</option><option data-group_id="19832" data-hotel_id="6231">Clarks Residences, Nainital</option><option data-group_id="21465" data-hotel_id="9089">aôtel by clarks inn, Palampur</option><option data-group_id="19829" data-hotel_id="6226">ANA Clarks Inn, Near Amravati Enclave</option><option data-group_id="19854" data-hotel_id="6405">Vijayatej Clarks Inn, Patna</option><option data-group_id="19853" data-hotel_id="6237">Tarawade Clarks Inn, Shivajinagar</option><option data-group_id="19960" data-hotel_id="6363">Clarks Safari, Pushkar</option><option data-group_id="20939" data-hotel_id="8221">Clarks Exotica Island House, Port Blair</option><option data-group_id="19872" data-hotel_id="6355">OM Clarks Inn, Raebareli</option><option data-group_id="19873" data-hotel_id="6230">Clarks Inn Suites, Near Raipur Airport</option><option data-group_id="19874" data-hotel_id="6457">Clarks Exotica Nature Resort, Near Apple Jam Factory</option><option data-group_id="19875" data-hotel_id="6373">Clarks Exotica Resort, Near Mukhteshwar</option><option data-group_id="19961" data-hotel_id="7309">Clarks Inn Suites, Ranthambore</option><option data-group_id="19961" data-hotel_id="6450">Clarks Safari, Ranthambore</option><option data-group_id="20940" data-hotel_id="8219">Clarks Inn Express, Rishikesh</option><option data-group_id="20241" data-hotel_id="7127">Clarks Inn Express, Sirkazhi</option><option data-group_id="19876" data-hotel_id="6500">Ashiana Clarks Inn, Near Shimla Mall Road</option><option data-group_id="19877" data-hotel_id="6351">Green View Clarks Inn, Near Elephant Camps &amp; Jog Falls</option><option data-group_id="21028" data-hotel_id="8388">Clarks Collection, Somnath</option><option data-group_id="19998" data-hotel_id="6713">Clarks Inn, Near Lal Chaulk</option><option data-group_id="20372" data-hotel_id="7363">Albatross Villas &amp; Suites by The Clarks, Kandy Sri Lanka</option><option data-group_id="20372" data-hotel_id="9498">Beacon by the Bay Villas &amp; Suites by The Clarks, Dondra</option><option data-group_id="20372" data-hotel_id="8385">Celestial Hills - Villas &amp; Suites by The Clarks, Kandy</option><option data-group_id="20004" data-hotel_id="6365">Clarks Collection, Vadodara</option><option data-group_id="20029" data-hotel_id="6800">Anandam Clarks Inn Suites, Vrindavan</option><option data-group_id="20697" data-hotel_id="6358">Velvet Clarks Exotica, Zirakpur</option><option data-group_id="20192" data-hotel_id="7014">Clarks Exotica, Kamadhoo Maldives</option></select></div>
+                        </div>
+                        <div class="whyBookDirect" style=""><a class="active">Why Book Direct?</a>
+                            <div class="wrapperOfBenefits">
+                                <ul class="benefitList">
+                                    <li class="listItem"><i class="far fas fa-asterisk"></i>Lowest Price Guaranteed</li>
+                                    <li class="listItem"><i class="far far fa-asterisk"></i>Get Exclusive Inclusions</li>
+                                    <li class="listItem"><i class="far far fa-asterisk"></i>Easy amendments / cancellation</li>
+                                    <li class="listItem"><i class="far far fa-asterisk"></i>Complete Tranquility (Book directly, No intermediary)</li>
+                                    <li class="listItem"><i class="far far fa-asterisk"></i>Website Booking Benefits</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form action="https://bookings.theclarkshotels.com" class="sm_booking_form booking-form booking-button" data-engine="simplotel" data-group_id="20591" data-hotel_id="7680" id="booking-form" method="GET" target="_self"><input id="chain_id" name="chainId" type="hidden" value="6225" /><input id="property_id" name="propertyId" type="hidden" value="7680" /><input id="check_in" name="checkIn" type="hidden" /><input id="check_out" name="checkOut" type="hidden"
+                            />
+                            <div class="form-group date-parameter-block tohide"><label>Check In</label>
+                                <div class="dp-holder"><input class="arrival-date-input form-control" id="" name="" type="text" /><span class="fa fa-calendar"></span></div>
+                            </div>
+                            <div class="form-group date-parameter-block tohide"><label>Check Out</label>
+                                <div class="dp-holder"><input class="departure-date-input form-control" id="" name="" type="text" /><span class="fa fa-calendar"></span></div>
+                            </div>
+                            <div class="adult-wrapper">
+                                <div class="form-group adult-block tohide"><label for="adults">Adults</label>
+                                    <div><select class="form-control" data-meta="2" id="adults_id" name="adults"><option value="1">1</option><option selected="" value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>
+                                </div>
+                            </div>
+                            <div class="child-wrapper">
+                                <div class="form-group child-block tohide" data-placement="bottom" data-toggle="tooltip" title="Age : 5-12 Years"><label for="children">Children</label>
+                                    <div><select class="form-control" data-meta="0" id="children_id" name="children"><option selected="" value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
+                                </div>
+                            </div>
+                            <div class="form-group promo-block text-field tohide"><label for="promocode">Promo Code</label>
+                                <div class="tb-holder"><input class="form-control" data-meta="current_hotel.showPromocode" id="promo_code" name="promocode" type="text" value="" /></div>
+                            </div>
+                            <div class="form-group min-price-wrapper"><input class="min-room-price" data-meta="" type="hidden" value="" /></div>
+                            <div class="btn-wrapper">
+                                <div class="form-group check-btn-holder"><input class="btn btn-full-width" data-meta="" id="" name="" type="submit" value="Book Now" /></div>
+                            </div><input class="common" data-checkindate="Today" data-checkindateselected="" data-childmaxage="12" data-childminage="5" data-lengthofstay="1" data-lengthofstayselected="" data-propertytype="chain" data-resbtnname="Book Now" type="hidden"
+                            /></form>
+                        <div class="open-form-block vc_open-form-block booking-button"><a class="open-booking-form" href="#"><span class="link-text">More Options</span> <i class="fa fa-lg fa-plus-circle link-icon"></i></a></div>
+                    </div>
+                </div>
+            </div> {% endcomment %}
+        </div>
 
 
 
