@@ -132,8 +132,8 @@ STATIC_ROOT = '/var/www/stayblissretreatsproject/static/'
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static'),
-    # os.path.join(BASE_DIR,'staticfile'),
+    # os.path.join(BASE_DIR,'static'),
+    os.path.join(BASE_DIR,'staticfile'),
 ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT =  os.path.join(BASE_DIR,'media')
