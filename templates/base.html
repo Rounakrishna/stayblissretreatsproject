@@ -89,7 +89,7 @@
                                 <select class="form-control" id="booking-engine-groups">
                                     <option data-group_id="19858" selected="">Simla</option>
                                     <option data-group_id="21591">Dharamsala</option>
-                                    <option data-group_id="20056">ayodhiya,UP</option>
+                                    <option data-group_id="20056">Ayodhaya,UP</option>
                                 </select>
                             </div>
                         </div>
@@ -179,8 +179,8 @@
                                             <p></p>
                                             <h2>India's Fastest<br/> Growing Hotel Chain</h2>
                                             <p><strong>01</strong><br/> Country</p>
-                                            <p><strong>3+</strong><br/> Destinations</p>
-                                            <p><strong>5+</strong><br/> Hotels</p>
+                                            <p><strong>5+</strong><br/> Destinations</p>
+                                            <p><strong>7+</strong><br/> Hotels</p>
                                             <p></p>
                                         </div>
                                     </div>
@@ -211,7 +211,7 @@
                                 {% endfor %}
                                 
 
-                                {% if properties %}
+                                {% comment %} {% if properties %}
                                 <div class="col-xs-12 one-col text-content"><img alt="Clarks Exotica Rajgarh" class="img-responsive image-content-29" loading="lazy" src="{{properties.0.image.url}}"
                                         style="aspect-ratio: 1127/634; " />
                                     <div class="text-content-wrapper">
@@ -236,7 +236,7 @@
                                         <p></p>
                                     </div>
                                 </div>
-                                {% endif %}
+                                {% endif %} {% endcomment %}
                                
                             </div>
 
@@ -433,7 +433,7 @@
                                 <div class="col-xs-12 one-col text-content">
                                     <div class="text-content-wrapper">
                                         <p></p>
-                                        <h2>About | The Stay Bliss Retreats</h2>
+                                        <h2>About | The Stay Bliss Villa</h2>
                                         <p>Stay Bliss Villa, Bhimtal Step into a world where contemporary villa under the sun, revealing extraordinary views that stir the soul. Here, amidst the breathtaking landscape, awaits the warmest hospitality, inviting you to experience the magic of Stay Bliss Villa
                                             Whether you're seeking a quiet retreat or a space for family gatherings, Stay Bliss Villa caters to your needs.</p>
                                         <!-- <div contenteditable="false" tabindex="-1">
@@ -583,35 +583,16 @@
         </div>
 
 
-
-
-
-
-
-
-
-
-
         {% comment %} ---------------------------------------------------------------------------------------- {% endcomment %}
         {% include "footer.html" %}
         
 
 
-
-
-
-
-
-
-
-
-
-
-
+        
         <p id="back-top"><a class="up" href="#top"><span class="fa fa-angle-down"></span></a></p>
         </main>
         <div id="fb-root"></div><input id="assetRelPath" type="hidden" value="./" /><input id="device" type="hidden" value="desktop" /><input id="template_type" type="hidden" value="common" /><input id="hotel_id" type="hidden" value="6225" /><input id="bookingUrl" type="hidden"
-            value="https://bookings.theclarkshotels.com" /><input id="bookingUrlApi" type="hidden" value="https://bookings.simplotel.com/" /><input id="websiteMessagingStatus" type="hidden" value="True" /><input id="parent_hotel_id" type="hidden" value="6225"
+            value="#" /><input id="bookingUrlApi" type="hidden" value="#" /><input id="websiteMessagingStatus" type="hidden" value="True" /><input id="parent_hotel_id" type="hidden" value="6225"
         />
         <div id="booking-modal-toggle-skel" style="display: none;"><button class="btn booking-modal-toggle resv_button" data-target="#resv-form" data-toggle="modal">Book Now</button></div>
         <div aria-labelledby="myModalLabel" class="modal fade inner-page-booking-modal" id="hotelBookModal" role="dialog" tabindex="-1">

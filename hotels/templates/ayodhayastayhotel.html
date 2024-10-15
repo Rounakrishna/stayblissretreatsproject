@@ -167,7 +167,7 @@
     <link href="https://cdnjs.cloudflare.com/" rel="dns-prefetch" />
     <link crossorigin="" href="https://cdnjs.cloudflare.com/" rel="preconnect" />
     <meta content="#2b2a29" name="theme-color" />
-    {% comment %} <link href="https://res.cloudinary.com/simplotel/image/upload/x_640,y_0,w_228,h_228,c_crop/w_32,h_32,c_scale/the-clarks-hotels-resorts/Clarks_logo_white_FINAL_qzlzaq.ico" rel="shortcut icon" /> {% endcomment %}
+    <link href="../../media/falcon.png" rel="shortcut icon"/>
     <style type="text/css">header .navbar-nav>li:not(#menuFilterLoc):hover>.dropdown-menu {display: block;}</style>
     <meta content="BDAACE752F021F8ED5D1AD5A93AAF201" name="msvalidate.01" />
 </head>
@@ -514,7 +514,7 @@
                                 </div>
                             </div>
 
-                            <div class="clearfix widget-wrapper imageDescriptionSide imageDescriptionSide-rightimage two-col bgColorContainer fullWidthWidget simp-custom-leftwidgetbg simp-custom-btn simp-custom-center" data-widget-id="2253741" style="background-color: #bfbebe; ">
+                            <div class="clearfix widget-wrapper imageDescriptionSide imageDescriptionSide-rightimage two-col bgColorContainer fullWidthWidget simp-custom-leftwidgetbg simp-custom-btn simp-custom-center" data-widget-id="2253741" style="background-color: #fff; ">
                                 <div class="fullWidthWidgetWrapper clearfix">
                                     <div class="col-md-4 col-sm-6 left-box">
                                         <div class="text-content">
@@ -537,7 +537,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="clearfix widget-wrapper imageDescriptionSide imageDescriptionSide-leftimage two-col bgColorContainer fullWidthWidget simp-custom-rightwidgetbg simp-custom-btn simp-custom-center" data-widget-id="2253743" style="background-color: #bfbebe; ">
+                            <div class="clearfix widget-wrapper imageDescriptionSide imageDescriptionSide-leftimage two-col bgColorContainer fullWidthWidget simp-custom-rightwidgetbg simp-custom-btn simp-custom-center" data-widget-id="2253743" style="background-color: #fff; ">
                                 <div class="fullWidthWidgetWrapper clearfix">
                                     <div class="col-md-8 left-box"><img alt="Dining arrangement besides windows with mountain views - Clarks Inn Suites, Manali" class="img-responsive image-content" height="256" loading="lazy" src="../../media/ayodhaya/photo/room2.jpeg" style="aspect-ratio: 1400/788; " width="455" /></div>
                                     <div class="col-md-4 right-box">
@@ -698,7 +698,12 @@
                                 <div class="social_feed clearfix section_bg"></div>
                                 <div class="promotions_block clearfix"></div>
                                 <div class="location_map_block clearfix" data-widget-id="loc_302754">
-                                    <div class="clearfix wtlocmap"><a class="" href="#"><img alt="location map" class="img-responsive" height="200" loading="lazy" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBDxiAqwL5hmQypVpwmo_7ctFueIBmKRi8&amp;center=31.0782864,77.1178214&amp;scale=2&amp;zoom=14&amp;size=600x200&amp;maptype=roadmap&amp;markers=color:red%7C31.1060209,77.31202" width="600"/></a></div>
+                                    <div class="clearfix wtlocmap">
+                                        <a class="" href="#">
+                                            {% comment %} <img alt="location map" class="img-responsive" height="200" loading="lazy" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBDxiAqwL5hmQypVpwmo_7ctFueIBmKRi8&amp;center=31.0782864,77.1178214&amp;scale=2&amp;zoom=14&amp;size=600x200&amp;maptype=roadmap&amp;markers=color:red%7C31.1060209,77.31202" width="600"/> {% endcomment %}
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.4791249264345!2d77.24064327514085!3d31.012898074450355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39058058c4bb8c81%3A0x4ab7690a6891bc35!2sLittle%20Heart%20Resort!5e0!3m2!1sen!2sin!4v1724746694597!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="custom_widgets_block clearfix">
                                     <div class="row clearfix widget-wrapper" id="widget-custom_mobile_hero_video">
@@ -5470,12 +5475,12 @@
             </script>
             <script>
                 $(() => {
-                    $("#footer .comm_cont.f_bot .container").append($('<div class="col-xs-12 prop-rights"><p>All Rights Reserved with ANK Hotels Private Limited</p></div>'));
+                    $("#footer .comm_cont.f_bot .container").append($('<div class="col-xs-12 prop-rights"><p>All Rights Reserved With Stay Bliss Retreats</p></div>'));
                 })
 
                 window.addEventListener("load", () => {
                     if ($('#device').val() === 'mobile') {
-                        $(".mobile #footer .footer-row.final").append($('<div class="col-xs-12 prop-rights"><p>All Rights Reserved with ANK Hotels Private Limited</p></div>'));
+                        $(".mobile #footer .footer-row.final").append($('<div class="col-xs-12 prop-rights"><p>All Rights Reserved With Stay Bliss Retreats</p></div>'));
                     }
                 })
             </script>
@@ -5572,7 +5577,7 @@
                 $('.for-homepage #back-top').after('<div id="whatsAppHeader"><a class="social-wa" href="https://web.whatsapp.com/send?phone=+91 9205867733" target="_blank"><span class="fa fa-whatsapp"></span></a></div>');
 
                 // For Mobile
-                $('.mobile.for-homepage .fab_book_button').before('<div id="whatsAppHeader"><a class="social-wa" href="https://api.whatsapp.com/send?phone=919205867733" target="_blank"><span class="fa fa-whatsapp"></span></a></div>');
+                $('.mobile.for-homepage .fab_book_button').before('<div id="whatsAppHeader"><a class="social-wa" href="https://api.whatsapp.com/send?phone=7011311171" target="_blank"><span class="fa fa-whatsapp"></span></a></div>');
             </script>
             <script>
                 //for desktop
