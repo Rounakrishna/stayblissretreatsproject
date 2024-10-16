@@ -5686,7 +5686,7 @@ body.mobile {
 }
 
 .for-homepage header nav.navbar.navbar-top .navbar-nav li a {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .for-homepage header nav.navbar.navbar-top .navbar-nav .moreOptions .dropdown-more li a {
@@ -5698,11 +5698,11 @@ body.mobile {
 }
 
 .for-homepage header .navbar-top .navbar-brand img {
-    filter: brightness(0) invert(1);
+    /* filter: brightness(0) invert(1); */
 }
 
 .for-homepage header nav.navbar.navbar-top .navbar-nav li .fa-angle-down {
-    color: #fff !important;
+    color: #000000 !important;
 }
 
 .for-homepage header nav.navbar.navbar-top.scroll .navbar-nav li a {
@@ -5749,7 +5749,7 @@ body.mobile {
 
 .for-homepage header .navbar-top {
     /*background: rgb(0 0 0 / 50%);*/
-    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5)25%, rgba(0, 0, 0, 0.75)50%, rgba(0, 0, 0, 0.9)75%, rgba(0, 0, 0, 1)100%);
+    background: #fff;
     /*backdrop-filter: blur(8px);*/
 }
 
