@@ -180,7 +180,7 @@
                                             <h2>India's Fastest<br/> Growing Hotel Chain</h2>
                                             <p><strong>01</strong><br/> Country</p>
                                             <p><strong>5+</strong><br/> Destinations</p>
-                                            <p><strong>7+</strong><br/> Hotels</p>
+                                            <p><strong>5+</strong><br/> Hotels</p>
                                             <p></p>
                                         </div>
                                     </div>
@@ -445,7 +445,7 @@
                             </div>
                             <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider nonFullWidthWidget simp-custom-home-explore-slider simp-custom-new-slider simp-custom-hide-only-mobile" data-widget-id="2292854"
                                 style=" ">
-                                {% for property in properties  %} 
+                                {% comment %} {% for property in properties  %} 
                                 <div class="col-xs-12 one-col text-content"><img alt="Cover-01" class="img-responsive image-content-29" loading="lazy" src="{{property.image.url}}"
                                         style="aspect-ratio: 4998/2812; " />
                                     <div class="text-content-wrapper">
@@ -454,7 +454,15 @@
                                         <p></p>
                                     </div>
                                 </div>
-                                {% endfor %}
+                                {% endfor %} {% endcomment %}
+                                <div class="col-xs-12 one-col text-content"><img alt="Cover-01" class="img-responsive image-content-29" loading="lazy" src="../media/staybliss/photo/first.jpeg"
+                                        style="aspect-ratio: 4998/2812; " />
+                                    <div class="text-content-wrapper">
+                                        <p></p>
+                                        <p>none</p>
+                                        <p></p>
+                                    </div>
+                                </div>
                             </div>
 
                             
@@ -475,15 +483,24 @@
                             <div class="clearfix widget-wrapper wtformjson fullWidthWidget simp-custom-news-letter-form" data-widget-id="2292870" style=" ">
                                 <div class="fullWidthWidgetWrapper clearfix">
                                     <div class="col-sm-12 one-col">
-                                        <form class="form-horizontal" enctype="multipart/form-data" id="form-6225-814983-3561661" role="form"><input id="form-id" type="hidden" value="6225-814983-3561661" />
+                                        <form action="{% url 'submit_resume' %}" method="post" class="form-horizontal" enctype="multipart/form-data" id="form-6225-814983-3561661" role="form"><input id="form-id" type="hidden" value="6225-814983-3561661" />
+                                            {% csrf_token %}
                                             <fieldset>
-                                                <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1703167224204">Newsletter</label>
-                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_email" id="textbox_1703167224204" name="textbox_name_1703167224204" placeholder="Email Address" required="" type="email" /></div>
+                                                <div class="form-group col-sm-12">
+                                                    <label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1703167224204">Newsletter</label>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <input class="form-control form-control-custom contact_email" id="textbox_1703167224204" name="email" placeholder="Email Address" required type="email" />
+                                                    </div>
                                                 </div>
-                                                <div class="col-sm-8" id="message-6225-814983-3561661"></div><input name="message" type="hidden" value="6225-814983-3561661" /><input id="msg-6225-814983-3561661" type="hidden" value="Submitted Successfully" /><input id="errmsg-6225-814983-3561661" type="hidden"
-                                                    value="We are sorry - something went wrong. Please try again after refreshing the page" />
-                                                <div class="form-group col-sm-12" id="form-group-submit"><label class="col-sm-12 col-md-2"> </label>
-                                                    <div class="col-sm-12 col-md-6"><button class="btn btn-forms btn-full-width formSubmitButton" id="btn-6225-814983-3561661" type="button">Submit</button></div>
+                                                <div class="col-sm-8" id="message-6225-814983-3561661"></div>
+                                                {% comment %} <input name="message" type="hidden" value="6225-814983-3561661" />
+                                                <input id="msg-6225-814983-3561661" type="hidden" value="Submitted Successfully" />
+                                                <input id="errmsg-6225-814983-3561661" type="hidden" value="We arreshing the page"/> {% endcomment %}
+                                                <div class="form-group col-sm-12" id="form-group-submit">
+                                                    <label class="col-sm-12 col-md-2"> </label>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <button id="btn-6225-814983-3561661" type="submit">Submit</button>
+                                                    </div>
                                                 </div>
                                             </fieldset>
                                             <!-- <input class="subscribe_api" name="subscribe_api" type="hidden" value="https://bookings.simplotel.com/subscribeForm?language=en" />
@@ -505,7 +522,7 @@
                                 </div>
                             </div>
 
-{% comment %} 
+                            {% comment %} 
                             <div class="clearfix widget-wrapper wt1tb simp-custom-hero-text simp-custom-hide-widget" data-widget-id="2292885" style=" ">
                                 <div class="col-xs-12 one-col text-content">
                                     <div class="text-content-wrapper">
@@ -565,7 +582,8 @@
                                     </div>
                                 </div>
                             </div>
-                             {% endcomment %}
+                            {% endcomment %}
+
 
 
                         </div>

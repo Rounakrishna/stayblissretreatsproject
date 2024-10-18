@@ -26,6 +26,7 @@ urlpatterns = [
     path('nav/', include('app.urls')),
     path('hotels/', include('hotels.urls')),
     path('', views.HOME,name='base'),
+    path('submit/', views.submit_resume, name='submit_resume'),
 
 ]
 if settings.DEBUG:

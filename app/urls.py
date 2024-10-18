@@ -9,6 +9,7 @@ urlpatterns = [
     path('package/',views.PACKAGES,name='packages'),
     path('carrier/',views.CARRIER,name='carrier'),
     path('testimonial/',views.TESTIMONIAL,name='testimonial'),
+    path('submit/', views.submit_resume, name='submit_resume'),
     
 ]
 
