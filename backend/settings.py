@@ -54,6 +54,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'backend.urls'
 
+DATA_UPLOAD_MAX_MEMORY_SIZE = 10485760  # Set it to the size you need, e.g., 10MB (in bytes)
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
