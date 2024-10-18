@@ -348,46 +348,35 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="clearfix widget-wrapper wtformjson fullWidthWidget simp-custom-sixty" data-widget-id="2195214" style=" ">
                                 <div class="fullWidthWidgetWrapper clearfix">
                                     <div class="col-sm-12 one-col">
-                                        <form class="form-horizontal" enctype="multipart/form-data" id="form-6225-816600-3372446" role="form"><input id="form-id" type="hidden" value="6225-816600-3372446" />
+                                        <form action="{% url 'submit_resume' %}" method="post" class="form-horizontal" enctype="multipart/form-data" id="form-6225-816600-3372446" role="form">
+                                            {% csrf_token %}
                                             <fieldset>
                                                 <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1634549047497">Name</label>
-                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom" id="textbox_1634549047497" name="textbox_name_1634549047497" placeholder="Enter Your Name" required="" type="text" /></div>
+                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom" id="textbox_1634549047497" name="name" placeholder="Enter Your Name" required type="text" /></div>
                                                 </div>
                                                 <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1634549067337">Email ID</label>
-                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_email" id="textbox_1634549067337" name="textbox_name_1634549067337" placeholder="Enter Your Email ID" required="" type="email" /></div>
+                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_email" id="textbox_1634549067337" name="email" placeholder="Enter Your Email ID" required type="email" /></div>
                                                 </div>
                                                 <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1634549088306">Contact / Mobile</label>
-                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_phNumber" id="textbox_1634549088306" name="textbox_name_1634549088306" placeholder="Enter Your Phone Number" required="" type="tel" /></div>
+                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_phNumber" id="textbox_1634549088306" name="phone" placeholder="Enter Your Phone Number" required type="text" /></div>
                                                 </div>
                                                 <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1634549118314">Resume</label>
-                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom" id="textbox_1634549118314" name="textbox_name_1634549118314" placeholder="Please type your query here" required="" type="file" /></div>
+                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom" id="textbox_1634549118314" name="resume" placeholder="Please type your query here" required type="file" /></div>
                                                 </div>
-                                                <div class="col-sm-8" id="message-6225-816600-3372446"></div><input name="message" type="hidden" value="6225-816600-3372446" /><input id="msg-6225-816600-3372446" type="hidden" value="Query received. Thank You" /><input id="errmsg-6225-816600-3372446" type="hidden"
-                                                    value="We are sorry - something went wrong. Please try again after refreshing the page" />
+                                                <div class="col-sm-8" id="message-6225-816600-3372446"></div>
                                                 <div class="form-group col-sm-12" id="form-group-submit"><label class="col-sm-12 col-md-2"> </label>
-                                                    <div class="col-sm-12 col-md-6"><button class="btn btn-forms btn-full-width formSubmitButton" id="btn-6225-816600-3372446" type="button">Submit</button></div>
+                                                    <div class="col-sm-12 col-md-6"><button  id="btn-6225-816600-3372446" type="submit">Submit</button></div>
                                                 </div>
-                                            </fieldset><input class="subscribe_api" name="subscribe_api" type="hidden" value="#" />
-                                            <div class="modal fade recaptcha-modal" id="contact_google_recaptcha_modal-6225-816600-3372446"
-                                                role="dialog">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header"><button class="close" data-dismiss="modal" type="button">×</button>
-                                                            <h4 class="modal-title">Please Select CheckBox</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="recaptcha-widget" id="contactFormFubscribeRecaptcha-6225-816600-3372446"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </fieldset>
                                         </form>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div class="no-gutter clearfix">
                             <div class="widget-wrapper">

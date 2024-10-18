@@ -10,6 +10,7 @@ urlpatterns = [
     path('carrier/',views.CARRIER,name='carrier'),
     path('testimonial/',views.TESTIMONIAL,name='testimonial'),
     path('submit/', views.submit_resume, name='submit_resume'),
+    path('submitform/', views.contact_form, name='contact_form'),
     
 ]
 

@@ -2,7 +2,8 @@ from app import models
 from django.shortcuts import render,redirect
 from django.core.mail import EmailMessage, BadHeaderError
 from django.core.exceptions import ValidationError
-from .forms import UserDetailForm
+from .forms import UserDetailForm,contact_detail_form
+from django.core.mail import send_mail
 # Create your views here.
 
 def HOME(requests):
@@ -57,43 +58,62 @@ def TESTIMONIAL(requests):
 def submit_resume(request):
 
     if request.method == 'POST':
-        form = UserDetailForm(request.POST)
-        print(form)
-
+        form = UserDetailForm(request.POST, request.FILES)
         
         if form.is_valid():
-                email = form.cleaned_data['email']
-                print(email)
+            name = form.cleaned_data['name']
+            phone = form.cleaned_data['phone']
+            email = form.cleaned_data['email']
+            resume = form.cleaned_data['resume']
 
-                # Create email content
-                hr_email = 'krishnakumarqaz0@gmail.com'  # Replace with the actual HR email
-                subject = 'New Resume Submission'
-                message = f"""
-                New Resume Submission:
-                
-            
-                Email: {email}
-               
-                """
-
-                # Create email object
-                email_message = EmailMessage(
-                    subject,  # Subject of the email
-                    message,  # Body of the email
-                    email,    # From email (user's email)
-                    [hr_email]  # To email (HR email)
-                )
-
-              
-                email_message.send()
-                print(email_message)
-               
+            # Create email content
+            hr_email = 'sales@stayblissretreats.com'  # Replace with actual HR email
+            subject = 'New Resume Submission'
+            message = f"Name: {name}\nEmail: {email}\nPhone: {phone}"
+            email_message = EmailMessage(subject, message, email, [hr_email])
+            email_message.attach(resume.name, resume.read(), resume.content_type)
+     
+            email_message.send()
         else:
-            error_message = "There was an issue with the information you provided. Please check and try again."
-            print(error_message, 'notvalid')
+            print("not valid")
+            # print(form.errors)
+            print(form.errors.as_json())
+        
+               
+    
+    else:
+        print("not post")
+        form = UserDetailForm()
+
+    return redirect('carrier') 
+
+
+
+def contact_form(request):
+
+    if request.method == 'POST':
+        form = contact_detail_form(request.POST, request.FILES)
+        
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            phone = form.cleaned_data['phone']
+            email = form.cleaned_data['email']
+            comment = form.cleaned_data['comment']
+          
+                      # Create email content
+            hr_email = 'sales@stayblissretreats.com'
+            subject = 'New Contact Form Submission'
+            message = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nComments: {comment}"
+            email_message = EmailMessage(subject, message, email, [hr_email])
+     
+            email_message.send()
+        else:
+            print("not valid")
+            # print(form.errors)
+            print(form.errors.as_json())
+               
     
     else:
         form = UserDetailForm()
-        print("Not port methods")
 
     return redirect('contact') 

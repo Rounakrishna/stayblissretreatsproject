@@ -21,7 +21,7 @@ def HOME(requests):
 
 
 
-def submit_resume(request):
+def submit_mail(request):
 
     if request.method == 'POST':
         form = UserDetailForm(request.POST)
@@ -33,7 +33,7 @@ def submit_resume(request):
                 print(email)
 
                 # Create email content
-                hr_email = 'krishnakumarqaz0@gmail.com'  # Replace with the actual HR email
+                hr_email = 'sales@stayblissretreats.com'  # Replace with the actual HR email
                 subject = 'New Resume Submission'
                 message = f"""
                 New Resume Submission:

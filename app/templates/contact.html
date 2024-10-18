@@ -289,7 +289,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-8 col-sm-6 right-box"><img alt="Reception Lounge 2" class="img-responsive image-content" height="256" loading="lazy" src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_1237,f_auto,c_fit/kvr-clarks-inn-kufri-shimla/Reception_Lounge_2_b0yn84"
+                                <div class="col-md-8 col-sm-6 right-box"><img alt="Reception Lounge 2" class="img-responsive image-content" height="256" loading="lazy" src="../../media/Daffodil/photo/first.jpeg"
                                         style="aspect-ratio: 5000/2813; " width="455" /></div>
                             </div>
 
@@ -335,39 +335,26 @@
                             <div class="clearfix widget-wrapper wtformjson fullWidthWidget" data-widget-id="2318386" style=" ">
                                 <div class="fullWidthWidgetWrapper clearfix">
                                     <div class="col-sm-12 one-col">
-                                        <form class="form-horizontal" enctype="multipart/form-data" id="form-8461-851719-3606111" role="form"><input id="form-id" type="hidden" value="8461-851719-3606111" />
+                                        <form action="{% url 'contact_form' %}" method="post" class="form-horizontal" enctype="multipart/form-data" id="form-8461-851719-3606111" role="form"><input id="form-id" type="hidden" value="8461-851719-3606111" />
+                                            {% csrf_token %}
                                             <fieldset>
                                                 <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1711032411462">Name</label>
-                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom" id="textbox_1711032411462" name="textbox_name_1711032411462" placeholder="Enter Your Name" required="" type="text" /></div>
+                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom" id="textbox_1711032411462" name="name" placeholder="Enter Your Name" required type="text" /></div>
                                                 </div>
                                                 <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1711032429233">Email</label>
-                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_email" id="textbox_1711032429233" name="textbox_name_1711032429233" placeholder="Enter Email" required="" type="email" /></div>
+                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_email" id="textbox_1711032429233" name="email" placeholder="Enter Email" required type="email" /></div>
                                                 </div>
                                                 <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textbox_1711032437908">Phone</label>
-                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_phNumber" id="textbox_1711032437908" name="textbox_name_1711032437908" placeholder="Enter Phone" required="" type="tel" /></div>
+                                                    <div class="col-sm-12 col-md-6"><input class="form-control form-control-custom contact_phNumber" id="textbox_1711032437908" name="phone" placeholder="Enter Phone" required type="tel" /></div>
                                                 </div>
                                                 <div class="form-group col-sm-12"><label class="col-sm-12 col-md-2 control-label-custom" for="textarea1711032461603">Comments</label>
-                                                    <div class="col-sm-12 col-md-6"><textarea class="form-control form-control-custom" id="textarea1711032461603" name="textarea_name_1711032461603" placeholder="" rows="5"></textarea></div>
+                                                    <div class="col-sm-12 col-md-6"><textarea class="form-control form-control-custom" id="textarea1711032461603" name="comment" placeholder="" rows="5"></textarea></div>
                                                 </div>
-                                                <div class="col-sm-8" id="message-8461-851719-3606111"></div><input name="message" type="hidden" value="8461-851719-3606111" /><input id="msg-8461-851719-3606111" type="hidden" value="Thank you for submitting your query. We are working on it and will revert back to you shortly."
-                                                /><input id="errmsg-8461-851719-3606111" type="hidden" value="We are sorry - something went wrong. Please try again after refreshing the page" />
+                                                <div class="col-sm-8" id="message-8461-851719-3606111"></div>
                                                 <div class="form-group col-sm-12" id="form-group-submit"><label class="col-sm-12 col-md-2"> </label>
-                                                    <div class="col-sm-12 col-md-6"><button class="btn btn-forms btn-full-width formSubmitButton" id="btn-8461-851719-3606111" type="button">Submit</button></div>
+                                                    <div class="col-sm-12 col-md-6"><button style="bacground:green;" id="btn-8461-851719-3606111" type="submit">Submit</button></div>
                                                 </div>
-                                            </fieldset><input class="subscribe_api" name="subscribe_api" type="hidden" value="#" />
-                                            <div class="modal fade recaptcha-modal" id="contact_google_recaptcha_modal-8461-851719-3606111"
-                                                role="dialog">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header"><button class="close" data-dismiss="modal" type="button">×</button>
-                                                            <h4 class="modal-title">Please Select CheckBox</h4>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="recaptcha-widget" id="contactFormFubscribeRecaptcha-8461-851719-3606111"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </fieldset>
                                         </form>
                                     </div>
                                 </div>
